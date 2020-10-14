@@ -58,6 +58,11 @@ body {
             color: $color_yellow;
             text-decoration: underline;
         }
+
+        .nav-item {
+            display: flex;
+            list-style: none;   
+        }
     }
 
 
@@ -78,6 +83,8 @@ body {
 .login_navigation{
     color: $color_yellow;
 }
+
+
 
 .login__create {
     text-align: center;

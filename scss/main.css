@@ -10851,6 +10851,13 @@ body {
   text-decoration: underline;
 }
 
+.login__navigation .nav-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
 .login__button_login:hover {
   background-color: #FCBF49;
   color: #003049;
