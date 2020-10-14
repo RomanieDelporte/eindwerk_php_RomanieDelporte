@@ -1,0 +1,127 @@
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+
+
+$color_darkblue: #003049;
+$color_yellow: #FCBF49;
+$color_white: #FFFF;
+$color-black: #0000;
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto Slab', serif;
+    // width: 100%;
+    background-color: $color_darkblue;
+}
+
+.container {
+    margin-top: 2%;
+}
+
+.login {
+
+    &__name {
+        color: $color_yellow;
+        text-transform: uppercase;
+    }
+
+
+    &__button_login {
+        border: 2px solid $color_yellow;
+        border-radius: 5px;
+        width: 60%;
+        padding: 4px;
+        margin-top: 4%;
+        background-color: $color_darkblue;
+        color: $color_white;
+        font-weight: 100;
+        text-align: center;
+
+    }
+
+    &__navigation {
+        list-style: none;
+        display: flex;
+        margin-top: 2%;
+        color: $color_white;
+
+
+        li {
+            margin: 2%;
+        }
+
+        li:hover {
+            color: $color_yellow;
+            text-decoration: underline;
+        }
+    }
+
+
+    &__button_login:hover {
+        background-color: $color_yellow;
+        color: $color_darkblue;
+    }
+
+
+
+
+
+
+
+
+}
+
+.login_navigation{
+    color: $color_yellow;
+}
+
+.login__create {
+    text-align: center;
+    margin-top: 7%;
+    color: $color_white;
+    margin-left: -1%;
+}
+
+.login__form {
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    margin-left: -8%;
+
+
+    .form-control {
+        width: 130%;
+        background-color: $color_yellow;
+        border-radius: 10px;
+    }
+
+    .login__title {
+        color: $color_white;
+    }
+
+
+
+}
+
+.login__checkbox {
+    text-align: center;
+
+    .custom-control-label {
+        color: $color_white;
+    }
+
+    span {
+        color: $color_yellow;
+    }
+}
+
+.login_register {
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+
+}
