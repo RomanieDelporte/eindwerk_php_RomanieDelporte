@@ -1,0 +1,225 @@
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+
+
+// variabelen
+$color_darkblue: #003049;
+$color_yellow: #FCBF49;
+$color_white: #FFFF;
+$color-black: #0000;
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+// body 
+
+body {
+    font-family: 'Roboto Slab', serif;
+}
+
+.header__home {
+    height: 120px;
+    background-color: $color_darkblue;
+    padding-top: 2%;
+    border: 2px solid;
+    border-radius: 0em 0em 2em 2em;
+    margin-right: 5%;
+    margin-left: 5%;
+ }
+
+// header
+.login {
+    &__name {
+        color: $color_yellow;
+        text-transform: uppercase;
+        font-size: 30px;
+    }
+
+    &__title {
+        color: $color_yellow;
+        text-transform: uppercase;
+    }
+
+
+    &__button_login {
+        border: 2px solid $color_yellow;
+        border-radius: 5px;
+        width: 90%;
+        padding: 4px;
+        background-color: $color_darkblue;
+        color: $color_white;
+        font-weight: 100;
+        text-align: center;
+
+    }
+
+    &__navigation {
+        list-style: none;
+        display: flex;
+        color: $color_white;
+
+        li {
+            margin: 2%;
+        }
+
+        li:hover {
+            color: $color_yellow;
+            text-decoration: underline;
+        }
+
+        .nav-item {
+            display: flex;
+            list-style: none;
+        }
+    }
+
+    &__button_login:hover {
+        background-color: $color_yellow;
+        color: $color_darkblue;
+    }
+
+    &__name__after {
+        color: $color_white;
+        display: flex;
+        margin-top: 7%;
+    }
+
+    &__profile {
+        display: flex;
+
+        span {
+            color: $color_yellow;
+        }
+
+        i {
+            margin-left: 4%;
+            margin-top: 9%;
+            color: $color_yellow;
+        }
+    }
+
+}
+
+
+// Body 
+
+.home {
+    &__about h1 {
+        text-align: center;
+        color: $color_yellow;
+        margin-top: 5%;
+    }
+
+    &__text {
+        margin-top: 5%;
+
+        h2 {
+            font-weight: 600;
+        }
+
+        h3 {
+            font-weight: 200;
+            font-size: 20px;
+        }
+
+        img {
+            width: 90%;
+            height: 90%;
+            margin-left: 5%;
+            border-radius: 15px;
+        }
+    }
+
+    .title_events h1 {
+        margin-top: 10%;
+    }
+
+    .card-columns {
+        margin-top: 7%;
+        padding-bottom: 15%;
+    }
+
+    .card_eat,
+    .card_paint {
+        background-color: $color_yellow;
+        border-radius: 20px;
+        text-align: center;
+
+        h5 {
+            color: $color_darkblue;
+        }
+
+    }
+
+    .card_team {
+        background-color: $color_darkblue;
+        border-radius: 20px;
+        text-align: center;
+
+        h5,
+        .card-text {
+            color: $color_white;
+        }
+    }
+
+
+}
+
+// footer
+.home__footer {
+    background-color: $color_darkblue;
+    border-radius: 2em 2em 0em 0em;
+    margin-right: 5%;
+    margin-left: 5%;
+
+    h1 {
+        color: $color_white;
+        text-transform: uppercase;
+    }
+
+    .container {
+        padding-top: 2%;
+    }
+
+    .home__contact {
+        h2 {
+            color: $color_yellow;
+        }
+
+        p {
+            color: $color_white;
+            font-weight: 200;
+        }
+    }
+.row {padding-bottom: 2%;}
+    .home__navigation {
+        h2 {
+            color: $color_yellow;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        li {
+            color: $color_white;
+            font-weight: 200;
+        }
+
+        :hover {
+            color: $color_yellow;
+        }
+    }
+
+    .home__design {
+        padding-bottom: 0.2%;
+         p {
+            color: $color_white;
+            font-weight: 200;
+         }
+    }
+
+}

@@ -10809,11 +10809,16 @@ a.text-dark:hover, a.text-dark:focus {
 
 body {
   font-family: 'Roboto Slab', serif;
-  background-color: #003049;
 }
 
-.container {
-  margin-top: 2%;
+.header__home {
+  height: 120px;
+  background-color: #003049;
+  padding-top: 2%;
+  border: 2px solid;
+  border-radius: 0em 0em 2em 2em;
+  margin-right: 5%;
+  margin-left: 5%;
 }
 
 .login__name {
@@ -10822,12 +10827,16 @@ body {
   font-size: 30px;
 }
 
+.login__title {
+  color: #FCBF49;
+  text-transform: uppercase;
+}
+
 .login__button_login {
   border: 2px solid #FCBF49;
   border-radius: 5px;
   width: 90%;
   padding: 4px;
-  margin-top: 4%;
   background-color: #003049;
   color: #FFFF;
   font-weight: 100;
@@ -10839,7 +10848,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 2%;
   color: #FFFF;
 }
 
@@ -10864,52 +10872,124 @@ body {
   color: #003049;
 }
 
-.login__create {
-  text-align: center;
-  margin-top: 7%;
+.login__name__after {
   color: #FFFF;
-}
-
-.login__form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-top: 5%;
-  margin-left: -7%;
+  margin-top: 7%;
 }
 
-.login__register {
+.login__profile {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-top: 5%;
 }
 
-.login__form .form-control {
-  width: 130%;
+.login__profile span {
+  color: #FCBF49;
+}
+
+.login__profile i {
+  margin-left: 4%;
+  margin-top: 9%;
+  color: #FCBF49;
+}
+
+.detail__paint {
+  padding-bottom: 20%;
+}
+
+.detail__paint .container {
   background-color: #FCBF49;
+  margin-top: 10%;
+}
+
+.detail__paint .detail__title h1 {
+  margin-left: 5%;
+  color: #FFFF;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-top: 20%;
+}
+
+.detail__paint p {
+  font-weight: 200;
+  margin-left: 5%;
+  color: #003049;
+  font-style: italic;
+}
+
+.detail__paint p:nth-child(3) {
+  color: #003049;
+  font-weight: 500;
+}
+
+.detail__paint img {
+  width: 80%;
+  height: 75%;
+  margin-top: 5%;
   border-radius: 10px;
 }
 
-.login__form .login__title {
+.detail__paint img:nth-child(2) {
+  position: absolute;
+  margin-left: -65%;
+  margin-top: 35%;
+}
+
+.home__footer {
+  background-color: #003049;
+  border-radius: 2em 2em 0em 0em;
+  margin-right: 5%;
+  margin-left: 5%;
+}
+
+.home__footer h1 {
   color: #FFFF;
+  text-transform: uppercase;
 }
 
-.login__checkbox {
-  text-align: center;
+.home__footer .container {
+  padding-top: 2%;
 }
 
-.login__checkbox .custom-control-label {
-  color: #FFFF;
-}
-
-.login__checkbox span {
+.home__footer .home__contact h2 {
   color: #FCBF49;
 }
-/*# sourceMappingURL=main.css.map */
+
+.home__footer .home__contact p {
+  color: #FFFF;
+  font-weight: 200;
+}
+
+.home__footer .row {
+  padding-bottom: 2%;
+}
+
+.home__footer .home__navigation h2 {
+  color: #FCBF49;
+}
+
+.home__footer .home__navigation ul {
+  list-style: none;
+}
+
+.home__footer .home__navigation li {
+  color: #FFFF;
+  font-weight: 200;
+}
+
+.home__footer .home__navigation :hover {
+  color: #FCBF49;
+}
+
+.home__footer .home__design {
+  padding-bottom: 0.2%;
+}
+
+.home__footer .home__design p {
+  color: #FFFF;
+  font-weight: 200;
+}
+/*# sourceMappingURL=detail.css.map */

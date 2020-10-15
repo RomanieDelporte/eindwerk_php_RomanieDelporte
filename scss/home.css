@@ -10809,11 +10809,16 @@ a.text-dark:hover, a.text-dark:focus {
 
 body {
   font-family: 'Roboto Slab', serif;
-  background-color: #003049;
 }
 
-.container {
-  margin-top: 2%;
+.header__home {
+  height: 120px;
+  background-color: #003049;
+  padding-top: 2%;
+  border: 2px solid;
+  border-radius: 0em 0em 2em 2em;
+  margin-right: 5%;
+  margin-left: 5%;
 }
 
 .login__name {
@@ -10822,12 +10827,16 @@ body {
   font-size: 30px;
 }
 
+.login__title {
+  color: #FCBF49;
+  text-transform: uppercase;
+}
+
 .login__button_login {
   border: 2px solid #FCBF49;
   border-radius: 5px;
   width: 90%;
   padding: 4px;
-  margin-top: 4%;
   background-color: #003049;
   color: #FFFF;
   font-weight: 100;
@@ -10839,7 +10848,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 2%;
   color: #FFFF;
 }
 
@@ -10864,52 +10872,140 @@ body {
   color: #003049;
 }
 
-.login__create {
-  text-align: center;
+.login__name__after {
+  color: #FFFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin-top: 7%;
-  color: #FFFF;
 }
 
-.login__form {
+.login__profile {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-top: 5%;
-  margin-left: -7%;
 }
 
-.login__register {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-top: 5%;
-}
-
-.login__form .form-control {
-  width: 130%;
-  background-color: #FCBF49;
-  border-radius: 10px;
-}
-
-.login__form .login__title {
-  color: #FFFF;
-}
-
-.login__checkbox {
-  text-align: center;
-}
-
-.login__checkbox .custom-control-label {
-  color: #FFFF;
-}
-
-.login__checkbox span {
+.login__profile span {
   color: #FCBF49;
 }
-/*# sourceMappingURL=main.css.map */
+
+.login__profile i {
+  margin-left: 4%;
+  margin-top: 9%;
+  color: #FCBF49;
+}
+
+.home__about h1 {
+  text-align: center;
+  color: #FCBF49;
+  margin-top: 5%;
+}
+
+.home__text {
+  margin-top: 5%;
+}
+
+.home__text h2 {
+  font-weight: 600;
+}
+
+.home__text h3 {
+  font-weight: 200;
+  font-size: 20px;
+}
+
+.home__text img {
+  width: 90%;
+  height: 90%;
+  margin-left: 5%;
+  border-radius: 15px;
+}
+
+.home .title_events h1 {
+  margin-top: 10%;
+}
+
+.home .card-columns {
+  margin-top: 7%;
+  padding-bottom: 15%;
+}
+
+.home .card_eat,
+.home .card_paint {
+  background-color: #FCBF49;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.home .card_eat h5,
+.home .card_paint h5 {
+  color: #003049;
+}
+
+.home .card_team {
+  background-color: #003049;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.home .card_team h5,
+.home .card_team .card-text {
+  color: #FFFF;
+}
+
+.home__footer {
+  background-color: #003049;
+  border-radius: 2em 2em 0em 0em;
+  margin-right: 5%;
+  margin-left: 5%;
+}
+
+.home__footer h1 {
+  color: #FFFF;
+  text-transform: uppercase;
+}
+
+.home__footer .container {
+  padding-top: 2%;
+}
+
+.home__footer .home__contact h2 {
+  color: #FCBF49;
+}
+
+.home__footer .home__contact p {
+  color: #FFFF;
+  font-weight: 200;
+}
+
+.home__footer .row {
+  padding-bottom: 2%;
+}
+
+.home__footer .home__navigation h2 {
+  color: #FCBF49;
+}
+
+.home__footer .home__navigation ul {
+  list-style: none;
+}
+
+.home__footer .home__navigation li {
+  color: #FFFF;
+  font-weight: 200;
+}
+
+.home__footer .home__navigation :hover {
+  color: #FCBF49;
+}
+
+.home__footer .home__design {
+  padding-bottom: 0.2%;
+}
+
+.home__footer .home__design p {
+  color: #FFFF;
+  font-weight: 200;
+}
+/*# sourceMappingURL=home.css.map */
