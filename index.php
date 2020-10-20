@@ -62,10 +62,10 @@
         </label>
         <div class="login__register">
           <div class="col-12 col-md-2">
-            <a href="/home.html"><button type="button" class="login__button_login">Registreer</button></a>
+            <a href="/home.php"><button type="button" class="login__button_login">Registreer</button></a>
           </div>
         </div>
-      </div>
+      </div>    
 
     </div>
   </div>

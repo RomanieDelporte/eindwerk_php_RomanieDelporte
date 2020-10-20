@@ -10843,30 +10843,6 @@ body {
   text-align: center;
 }
 
-.login__navigation {
-  list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  color: #FFFF;
-}
-
-.login__navigation li {
-  margin: 2%;
-}
-
-.login__navigation li:hover {
-  color: #FCBF49;
-  text-decoration: underline;
-}
-
-.login__navigation .nav-item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  list-style: none;
-}
-
 .login__button_login:hover {
   background-color: #FCBF49;
   color: #003049;
@@ -10894,6 +10870,24 @@ body {
   margin-left: 4%;
   margin-top: 9%;
   color: #FCBF49;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+nav a {
+  display: block;
+  color: #FFFF;
+  text-decoration: none;
+  margin: 2%;
+}
+
+nav a.active {
+  color: color_yellow;
+  text-decoration: underline;
 }
 
 .home__about h1 {

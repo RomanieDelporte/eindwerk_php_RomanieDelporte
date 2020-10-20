@@ -11,7 +11,7 @@
   },
   "devDependencies": {},
   "scripts": {
-    "watch:sass": "sass ./scss/main.scss --watch ./scss/main.css",
+    "watch:sass": "sass ./scss/main.scss --watch ./scss/main.css ./scss/home.css ./scss/detail.css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

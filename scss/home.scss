@@ -56,26 +56,6 @@ body {
 
     }
 
-    &__navigation {
-        list-style: none;
-        display: flex;
-        color: $color_white;
-
-        li {
-            margin: 2%;
-        }
-
-        li:hover {
-            color: $color_yellow;
-            text-decoration: underline;
-        }
-
-        .nav-item {
-            display: flex;
-            list-style: none;
-        }
-    }
-
     &__button_login:hover {
         background-color: $color_yellow;
         color: $color_darkblue;
@@ -101,6 +81,24 @@ body {
         }
     }
 
+}
+
+// php header dynamisch
+
+nav {
+    display: flex;
+}
+
+nav a {
+    display: block; 
+    color: $color_white;
+    text-decoration:  none;
+    margin: 2%;
+}
+
+nav a.active {
+    color: color_yellow;
+    text-decoration: underline;
 }
 
 

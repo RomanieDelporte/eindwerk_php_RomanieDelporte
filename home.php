@@ -1,10 +1,43 @@
+<!-- <?php 
+// include './libs/db.php';
+
+// $sql = 'SELECT `event_id`, `title`, `short_description`, `long_description`, `date`, `photo`, `location` FROM `events` ';
+//         $pdo_statement = $db->prepare($sql);
+//         // uitvoeren
+//         $pdo_statement->execute();
+//         // resultaat opvragen + variabel aanmaken voor een navigatie op te bouwen
+//         $all_events = $pdo_statement->fetchAll();
+
+//         // return $all_events;
+//         print_r($all_events);
+
+// header
+
+//         $sql = 'SELECT `page_id`, `name`, `slug` FROM `pages` ORDER BY `sort_order`';
+//         $pdo_statement = $db->prepare($sql);
+// //         // uitvoeren
+//         $pdo_statement->execute();
+//         // resultaat opvragen + variabel aanmaken voor een navigatie op te bouwen
+//         $all_pages = $pdo_statement->fetchAll();
+
+// //         // return $all_events;
+//         //  print_r($all_pages);
+
+//          foreach($all_pages as $page) {
+//              echo $page['name'];
+//          }
+
+
+
+?> -->
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/scss/home.css">
+  <link rel="stylesheet" href="scss/home.css">
   <script src="https://kit.fontawesome.com/bd99fa10f5.js" crossorigin="anonymous"></script>
   <link
     href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap"
@@ -15,6 +48,7 @@
 
 <body>
 
+
   <div class="header__home">
     <div class="container">
       <div class="row login">
@@ -22,12 +56,39 @@
           <h1 class="login__name">Fe-pgm</h1>
         </div>
         <div class="col-6 col-md-6">
-          <ul class="login__navigation">
+         <?php 
+         include './libs/db.php';
+         
+         $sql = 'SELECT `page_id`, `name`, `slug` FROM `pages` ORDER BY `sort_order`';
+        $pdo_statement = $db->prepare($sql);
+         // uitvoeren
+        $pdo_statement->execute();
+        // resultaat opvragen + variabel aanmaken voor een navigatie op te bouwen
+        $all_pages = $pdo_statement->fetchAll();
+
+         // return $all_events;
+        //  print_r($all_pages);
+            echo '<nav>';
+         foreach($all_pages as $page) {
+             echo  '<a href="">' . $page['name'] . '</a>';
+         }
+         echo '</nav>';
+
+         // ophalen van de huidige pagina
+
+         $page_id = 1;
+
+         
+         
+         ?>
+
+
+          <!-- <ul class="login__navigation">
             <li>Home</li>
             <li>Events</li>
             <li>Eat-Options</li>
             <li>Contact</li>
-          </ul>
+          </ul> -->
         </div>
         <div class="login__profile col-6 col-md-2">
           <p class="login__name__after">Hallo Romanie</p>
@@ -64,7 +125,7 @@
               <!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
               <div class="card-body">
                 <h5 class="card-title">Paintball</h5>
-                <p class="card-text">2PGM - Neem een kijkje in het tablad events en maak leuke evenementen aan <br><a href="detail.html">Lees meer</a></p>
+                <p class="card-text">2PGM - Neem een kijkje in het tablad events en maak leuke evenementen aan <br><a href="detail.php">Lees meer</a></p>
                 <p class="card-text"><small class="text-muted"> Aanmaak event: 22 november</small></p>
               </div>
             </div>
@@ -72,7 +133,7 @@
               <!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
               <div class="card-body">
                 <h5 class="card-title">Teambuilding</h5>
-                <p class="card-text">2PGM - Neem een kijkje in het tablad events en maak leuke evenementen aan <br><a href="detail.html">Lees meer</a></p>
+                <p class="card-text">2PGM - Neem een kijkje in het tablad events en maak leuke evenementen aan <br><a href="detail.php">Lees meer</a></p>
                 <p class="card-text"><small class="text-muted">Aanmaak event: 3 december</small></p>
               </div>
             </div>
@@ -80,7 +141,7 @@
               <!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
               <div class="card-body">
                 <h5 class="card-title">Amadeus</h5>
-                <p class="card-text">2PGM - Neem een kijkje in het tablad events en maak leuke evenementen aan  <br><a href="detail.html">Lees meer</a></p>
+                <p class="card-text">2PGM - Neem een kijkje in het tablad events en maak leuke evenementen aan  <br><a href="detail.php">Lees meer</a></p>
                 <p class="card-text"><small class="text-muted">Aanmaak event: 14 januari</small></p>
               </div>
             </div>
