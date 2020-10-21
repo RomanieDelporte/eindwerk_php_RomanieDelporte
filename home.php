@@ -1,35 +1,11 @@
-<!-- <?php 
-// include './libs/db.php';
+<?php 
 
-// $sql = 'SELECT `event_id`, `title`, `short_description`, `long_description`, `date`, `photo`, `location` FROM `events` ';
-//         $pdo_statement = $db->prepare($sql);
-//         // uitvoeren
-//         $pdo_statement->execute();
-//         // resultaat opvragen + variabel aanmaken voor een navigatie op te bouwen
-//         $all_events = $pdo_statement->fetchAll();
-
-//         // return $all_events;
-//         print_r($all_events);
-
-// header
-
-//         $sql = 'SELECT `page_id`, `name`, `slug` FROM `pages` ORDER BY `sort_order`';
-//         $pdo_statement = $db->prepare($sql);
-// //         // uitvoeren
-//         $pdo_statement->execute();
-//         // resultaat opvragen + variabel aanmaken voor een navigatie op te bouwen
-//         $all_pages = $pdo_statement->fetchAll();
-
-// //         // return $all_events;
-//         //  print_r($all_pages);
-
-//          foreach($all_pages as $page) {
-//              echo $page['name'];
-//          }
+include './views/partials/home/header_home.php';
 
 
 
-?> -->
+?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -47,56 +23,6 @@
 </head>
 
 <body>
-
-
-  <div class="header__home">
-    <div class="container">
-      <div class="row login">
-        <div class="col-6 col-md-4">
-          <h1 class="login__name">Fe-pgm</h1>
-        </div>
-        <div class="col-6 col-md-6">
-         <?php 
-         include './libs/db.php';
-         
-         $sql = 'SELECT `page_id`, `name`, `slug` FROM `pages` ORDER BY `sort_order`';
-        $pdo_statement = $db->prepare($sql);
-         // uitvoeren
-        $pdo_statement->execute();
-        // resultaat opvragen + variabel aanmaken voor een navigatie op te bouwen
-        $all_pages = $pdo_statement->fetchAll();
-
-         // return $all_events;
-        //  print_r($all_pages);
-            echo '<nav>';
-         foreach($all_pages as $page) {
-             echo  '<a href="">' . $page['name'] . '</a>';
-         }
-         echo '</nav>';
-
-         // ophalen van de huidige pagina
-
-         $page_id = 1;
-
-         
-         
-         ?>
-
-
-          <!-- <ul class="login__navigation">
-            <li>Home</li>
-            <li>Events</li>
-            <li>Eat-Options</li>
-            <li>Contact</li>
-          </ul> -->
-        </div>
-        <div class="login__profile col-6 col-md-2">
-          <p class="login__name__after">Hallo Romanie</p>
-          <i class="fas fa-chevron-circle-down"></i>
-        </div>
-      </div>
-    </div>
-  </div>
   <div class="home">
     <div class="home__about">
       <h1>FE-pgm. Wie zijn we?</h1>
@@ -120,12 +46,13 @@
 
           <div class="card-columns">
 
-            <div class="card_paint">                
+            <div class="card_paint">
 
               <!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
               <div class="card-body">
                 <h5 class="card-title">Paintball</h5>
-                <p class="card-text">2PGM - Neem een kijkje in het tablad events en maak leuke evenementen aan <br><a href="detail.php">Lees meer</a></p>
+                <p class="card-text">2PGM - Neem een kijkje in het tablad events en maak leuke evenementen aan <br><a
+                    href="detail.php">Lees meer</a></p>
                 <p class="card-text"><small class="text-muted"> Aanmaak event: 22 november</small></p>
               </div>
             </div>
@@ -133,7 +60,8 @@
               <!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
               <div class="card-body">
                 <h5 class="card-title">Teambuilding</h5>
-                <p class="card-text">2PGM - Neem een kijkje in het tablad events en maak leuke evenementen aan <br><a href="detail.php">Lees meer</a></p>
+                <p class="card-text">2PGM - Neem een kijkje in het tablad events en maak leuke evenementen aan <br><a
+                    href="detail.php">Lees meer</a></p>
                 <p class="card-text"><small class="text-muted">Aanmaak event: 3 december</small></p>
               </div>
             </div>
@@ -141,7 +69,8 @@
               <!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
               <div class="card-body">
                 <h5 class="card-title">Amadeus</h5>
-                <p class="card-text">2PGM - Neem een kijkje in het tablad events en maak leuke evenementen aan  <br><a href="detail.php">Lees meer</a></p>
+                <p class="card-text">2PGM - Neem een kijkje in het tablad events en maak leuke evenementen aan <br><a
+                    href="detail.php">Lees meer</a></p>
                 <p class="card-text"><small class="text-muted">Aanmaak event: 14 januari</small></p>
               </div>
             </div>
@@ -152,35 +81,10 @@
   </div>
 
 </body>
-<footer>
-  <div class="home__footer">
-    <div class="container">
-      <div class="row">
-        <div class="col-4">
-          <h1>Fe-pgm.</h1>
-       </div>
-        <div class="home__contact col-3 ">
-          <h2>Contact</h2>
-          <p>Kpt Cdt Vinckestraat 19</p>
-          <p>8710 OOIGEM</p>
-          <p>+32 (0)498 56 53 46</p>
-          <p>romaniedelporte230@gmail.com</p>
-        </div>
-        <div class="home__navigation col-5 ">
-          <h2>Navigation</h2>
-          <ul>
-            <a href="#"><li>Home</li></a>
-            <a href="#"><li>Events</li></a>
-            <a href="#"><li>Eat-options</li></a>
-            <a href="#"><li>Contact</li></a>
+<?php 
 
-          </ul>
-        </div>
-    </div>
-    <div class="home__design">
-      <p>© 2020 - designed by Romanie Delporte - All rights reserved</p>
-    </div>
-    </div>
-</footer>
+include './views/partials/home/footer_home.php';
+
+?>
 
 </html>

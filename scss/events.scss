@@ -1,0 +1,116 @@
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+
+
+// variabelen
+$color_darkblue: #003049;
+$color_yellow: #FCBF49;
+$color_white: #FFFF;
+$color-black: #0000;
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+//header 
+
+nav {
+    display: flex;
+}
+
+nav a {
+    display: block; 
+    color: $color_white;
+    text-decoration:  none;
+    margin: 2%;
+}
+
+nav a.active {
+    color: color_yellow;
+    text-decoration: underline;
+}
+
+// body 
+
+body {
+    font-family: 'Roboto Slab', serif;
+}
+
+
+.card-columns {
+    margin-top: 5%;
+
+}
+
+.card {
+
+    &__event {
+    background-color: $color_yellow;
+    max-width: 100%;
+    max-height: 180px;
+    border-radius: 10px;
+}
+
+.card-title {
+    text-align: center;
+    color: $color_darkblue;
+}
+
+.card-text {
+    text-align: center;
+    color: white;
+}
+
+
+}
+
+// zoekform
+form {
+    margin-top: 10%;
+
+   .search button {
+    color: #fff;
+    background-color: $color_darkblue;
+    border-radius: 10px;
+    font-size: 20px;
+    width: 10%;
+    height: 6%;
+    border-color: $color_darkblue;
+  }
+
+  .search button:hover {
+      background-color: $color_yellow;
+      border-color: $color_yellow;
+      color: $color_darkblue;
+  }
+  .content {
+      display: flex;
+      justify-content: flex-end;
+  }
+
+  .content input {
+      border-radius: 8px;
+      width: 20%;
+      border-color: $color-darkblue;
+  }
+ 
+}
+
+
+// toevoegen
+
+.add_event {
+
+    textarea {
+        border-radius: 10px;
+        color: $color_darkblue;
+        width: 30%;
+    }
+}
+
+
+
+
+
