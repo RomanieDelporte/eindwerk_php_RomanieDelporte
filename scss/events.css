@@ -10826,6 +10826,7 @@ body {
 
 .card-columns {
   margin-top: 2%;
+  padding-bottom: 5%;
 }
 
 .card__event {

@@ -82,4 +82,11 @@ $events = $sql_statement->fetchAll();
 
 </body>
 
+<?php 
+
+include_once './views/partials/home/footer_home.php';
+
+?>
+
+
 </html>
