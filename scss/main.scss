@@ -1,4 +1,6 @@
 // Required
+
+
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 
 $color_darkblue: #003049;
@@ -14,20 +16,16 @@ $color-black: #0000;
 
 // body
 
-body {
+body {    
     font-family: 'Roboto Slab', serif;
-    // width: 100%;
     background-color: $color_darkblue;
 }
 
-// container header
-.container {
-    margin-top: 2%;
-}
+
+
 
 // header
 .login {
-
     &__name {
         color: $color_yellow;
         text-transform: uppercase;

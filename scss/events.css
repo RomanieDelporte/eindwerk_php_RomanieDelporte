@@ -10820,11 +10820,6 @@ nav a {
   margin: 2%;
 }
 
-nav a.active {
-  color: color_yellow;
-  text-decoration: underline;
-}
-
 body {
   font-family: 'Roboto Slab', serif;
 }
