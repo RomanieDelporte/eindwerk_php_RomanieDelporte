@@ -10882,6 +10882,7 @@ form .content {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  margin-top: 3%;
 }
 
 form .content input {
