@@ -10878,6 +10878,10 @@ nav {
   display: flex;
 }
 
+a:hover {
+  color: #FCBF49;
+}
+
 nav a {
   display: block;
   color: #FFFF;
@@ -10885,9 +10889,26 @@ nav a {
   margin: 2%;
 }
 
-nav a.active {
+a {
   color: color_yellow;
   text-decoration: underline;
+}
+
+.card__event {
+  background-color: #FCBF49;
+  max-width: 100%;
+  max-height: 180px;
+  border-radius: 10px;
+}
+
+.card .card-title {
+  text-align: center;
+  color: #003049;
+}
+
+.card .card-text {
+  text-align: center;
+  color: white;
 }
 
 .home__about h1 {
@@ -10918,10 +10939,11 @@ nav a.active {
 
 .home .title_events h1 {
   margin-top: 10%;
+  font-size: 20px;
 }
 
 .home .card-columns {
-  margin-top: 7%;
+  margin-top: 3%;
   padding-bottom: 15%;
 }
 
@@ -10933,17 +10955,6 @@ nav a.active {
 
 .home .card_paint h5 {
   color: #003049;
-}
-
-.home .card_team {
-  background-color: #003049;
-  border-radius: 20px;
-  text-align: center;
-}
-
-.home .card_team h5,
-.home .card_team .card-text {
-  color: #FFFF;
 }
 
 .home__footer {
@@ -10973,6 +10984,10 @@ nav a.active {
 
 .home__footer .row {
   padding-bottom: 2%;
+}
+
+.home__footer .home__navigation {
+  line-height: 2.4;
 }
 
 .home__footer .home__navigation h2 {

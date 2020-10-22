@@ -10830,7 +10830,7 @@ body {
 }
 
 .card-columns {
-  margin-top: 5%;
+  margin-top: 2%;
 }
 
 .card__event {
@@ -10850,17 +10850,22 @@ body {
   color: white;
 }
 
-form {
-  margin-top: 10%;
+.forms_add {
+  margin-top: 5%;
+}
+
+.content {
+  margin-top: 3%;
 }
 
 form .search button {
   color: #fff;
+  margin-top: 2.5%;
   background-color: #003049;
   border-radius: 10px;
   font-size: 20px;
-  width: 10%;
-  height: 6%;
+  width: 25%;
+  height: 0%;
   border-color: #003049;
 }
 
@@ -10880,14 +10885,10 @@ form .content {
 }
 
 form .content input {
-  border-radius: 8px;
-  width: 20%;
-  border-color: #003049;
-}
-
-.add_event textarea {
   border-radius: 10px;
-  color: #003049;
-  width: 30%;
+  width: 50%;
+  max-height: 4%;
+  border-color: #003049;
+  margin: 2%;
 }
 /*# sourceMappingURL=events.css.map */

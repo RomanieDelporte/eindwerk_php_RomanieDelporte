@@ -2,7 +2,11 @@
 
 include './views/partials/home/header_home.php';
 
+$sql = 'SELECT * FROM `events` ORDER BY `date` DESC LIMIT 3';
 
+$sql_statement = $db->prepare($sql);
+$sql_statement->execute();
+$events = $sql_statement->fetchAll();
 
 ?>
 
@@ -40,44 +44,29 @@ include './views/partials/home/header_home.php';
           <div class="col-6">
             <img src="assets/images/home__picture.png">
           </div>
-          <div class="title_events">
-            <h1>Komende events</h1>
+          <div class="container">
+            <div class="title_events">
+              <h1>Komende events</h1>
+            </div>
           </div>
-
-          <div class="card-columns">
-
-            <div class="card_paint">
-
-              <!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
-              <div class="card-body">
-                <h5 class="card-title">Paintball</h5>
-                <p class="card-text">2PGM - Neem een kijkje in het tablad events en maak leuke evenementen aan <br><a
-                    href="detail.php">Lees meer</a></p>
-                <p class="card-text"><small class="text-muted"> Aanmaak event: 22 november</small></p>
-              </div>
-            </div>
-            <div class="card_team">
-              <!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
-              <div class="card-body">
-                <h5 class="card-title">Teambuilding</h5>
-                <p class="card-text">2PGM - Neem een kijkje in het tablad events en maak leuke evenementen aan <br><a
-                    href="detail.php">Lees meer</a></p>
-                <p class="card-text"><small class="text-muted">Aanmaak event: 3 december</small></p>
-              </div>
-            </div>
-            <div class="card_eat">
-              <!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
-              <div class="card-body">
-                <h5 class="card-title">Amadeus</h5>
-                <p class="card-text">2PGM - Neem een kijkje in het tablad events en maak leuke evenementen aan <br><a
-                    href="detail.php">Lees meer</a></p>
-                <p class="card-text"><small class="text-muted">Aanmaak event: 14 januari</small></p>
+          <div class="container">
+            <div class="row">
+              <div class="card-columns">
+            <?php 
+   
+              foreach( $events as $event) {
+              include './views/events.php';
+              
+            }
+            ?>
               </div>
             </div>
           </div>
+
         </div>
       </div>
     </div>
+  </div>
   </div>
 
 </body>

@@ -1,5 +1,5 @@
-@import '../node_modules/bootstrap/scss/bootstrap.scss';
 
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
 
 // variabelen
 $color_darkblue: #003049;
@@ -88,6 +88,10 @@ body {
 nav {
     display: flex;
 }
+a:hover {
+    color: $color_yellow;
+}
+
 
 nav a {
     display: block; 
@@ -96,10 +100,33 @@ nav a {
     margin: 2%;
 }
 
-nav a.active {
+a {
     color: color_yellow;
     text-decoration: underline;
 }
+
+.card {
+
+    &__event {
+        background-color: $color_yellow;
+        max-width: 100%;
+        max-height: 180px;
+        border-radius: 10px;
+    }
+
+    .card-title {
+        text-align: center;
+        color: $color_darkblue;
+    }
+
+    .card-text {
+        text-align: center;
+        color: white;
+    }
+
+
+}
+
 
 
 // Body 
@@ -133,10 +160,11 @@ nav a.active {
 
     .title_events h1 {
         margin-top: 10%;
+        font-size: 20px;
     }
 
     .card-columns {
-        margin-top: 7%;
+        margin-top: 3%;
         padding-bottom: 15%;
     }
 
@@ -150,17 +178,6 @@ nav a.active {
             color: $color_darkblue;
         }
 
-    }
-
-    .card_team {
-        background-color: $color_darkblue;
-        border-radius: 20px;
-        text-align: center;
-
-        h5,
-        .card-text {
-            color: $color_white;
-        }
     }
 
 
@@ -194,6 +211,7 @@ nav a.active {
     }
 .row {padding-bottom: 2%;}
     .home__navigation {
+        line-height: 2.4;
         h2 {
             color: $color_yellow;
         }

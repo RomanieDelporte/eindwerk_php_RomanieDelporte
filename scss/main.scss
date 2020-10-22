@@ -1,5 +1,5 @@
- @import '../node_modules/bootstrap/scss/bootstrap.scss';
-
+// Required
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
 
 $color_darkblue: #003049;
 $color_yellow: #FCBF49;
@@ -121,5 +121,3 @@ body {
         color: $color_yellow;
     }
 }
-
-

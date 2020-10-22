@@ -1,5 +1,4 @@
-@import '../node_modules/bootstrap/scss/bootstrap.scss';
-
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
 
 // variabelen
 $color_darkblue: #003049;
@@ -21,11 +20,12 @@ nav {
 }
 
 nav a {
-    display: block; 
+    display: block;
     color: $color_white;
-    text-decoration:  none;
+    text-decoration: none;
     margin: 2%;
 }
+
 
 nav a.active {
     color: color_yellow;
@@ -40,77 +40,77 @@ body {
 
 
 .card-columns {
-    margin-top: 5%;
+    margin-top: 2%;
 
 }
 
 .card {
 
     &__event {
-    background-color: $color_yellow;
-    max-width: 100%;
-    max-height: 180px;
-    border-radius: 10px;
+        background-color: $color_yellow;
+        max-width: 100%;
+        max-height: 180px;
+        border-radius: 10px;
+    }
+
+    .card-title {
+        text-align: center;
+        color: $color_darkblue;
+    }
+
+    .card-text {
+        text-align: center;
+        color: white;
+    }
+
+
 }
 
-.card-title {
-    text-align: center;
-    color: $color_darkblue;
+.forms_add {
+    margin-top: 5%;
 }
 
-.card-text {
-    text-align: center;
-    color: white;
-}
-
-
+.content {
+    margin-top: 3%;
 }
 
 // zoekform
 form {
-    margin-top: 10%;
-
-   .search button {
-    color: #fff;
-    background-color: $color_darkblue;
-    border-radius: 10px;
-    font-size: 20px;
-    width: 10%;
-    height: 6%;
-    border-color: $color_darkblue;
-  }
-
-  .search button:hover {
-      background-color: $color_yellow;
-      border-color: $color_yellow;
-      color: $color_darkblue;
-  }
-  .content {
-      display: flex;
-      justify-content: flex-end;
-  }
-
-  .content input {
-      border-radius: 8px;
-      width: 20%;
-      border-color: $color-darkblue;
-  }
- 
-}
 
 
-// toevoegen
+    .search {
 
-.add_event {
-
-    textarea {
-        border-radius: 10px;
-        color: $color_darkblue;
-        width: 30%;
+        button {
+            color: #fff;
+            margin-top: 2.5%;
+            background-color: $color_darkblue;
+            border-radius: 10px;
+            font-size: 20px;
+            width: 25%;
+            height: 0%;
+            border-color: $color_darkblue;
+        }
     }
+
+
+    .search button:hover {
+
+        background-color: $color_yellow;
+        border-color: $color_yellow;
+        color: $color_darkblue;
+    }
+
+    .content {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .content input {
+        border-radius: 10px;
+        width: 50%;
+        max-height: 4%;
+        border-color: $color-darkblue;
+        margin: 2%;
+    }
+
 }
-
-
-
-
-
