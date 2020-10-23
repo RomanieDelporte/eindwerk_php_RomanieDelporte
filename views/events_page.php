@@ -1,8 +1,6 @@
 <?php 
 
-
-
-$search_string= $_GET['search_string'] ?? '';
+$search_string= $_POST['search_string'] ?? '';
 
 $sql = 'SELECT * FROM `events` WHERE `title` LIKE :search_string LIMIT 20';
 
@@ -13,6 +11,7 @@ $sql_statement->execute(
     ]
 );
 $events = $sql_statement->fetchAll();
+
 ?>
 
 <!DOCTYPE html>
@@ -50,13 +49,13 @@ $events = $sql_statement->fetchAll();
         </form> 
     </div>
     <div class="col-4">
-        <form>
+        <form method="POST">
             <div class="search">
                 <div class="content">
-                    <form class="form-inline">
+                    <form  class="form-inline">
                         <input class="form-control mr-sm-2" value="<?= $search_string; ?>" name="search_string"
                             type="search" placeholder="Zoekterm" aria-label="Search">
-                        <button  type="submit">Search</button>
+                        <button type="submit">Search</button>
                 </div>
             </div>
         </div> 
