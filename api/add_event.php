@@ -19,5 +19,5 @@ $sql_statement->execute(
     ]
     );
 
- header('location: ../events.php');
+ header('location: ../index.php?page_id=2');
  die();

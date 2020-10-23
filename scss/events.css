@@ -10856,7 +10856,7 @@ body {
 
 form .search button {
   color: #fff;
-  margin-top: 2.5%;
+  margin-top: 7.5%;
   background-color: #003049;
   border-radius: 10px;
   font-size: 20px;
@@ -10878,7 +10878,6 @@ form .content {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  margin-top: 3%;
 }
 
 form .content input {
@@ -10887,5 +10886,41 @@ form .content input {
   max-height: 4%;
   border-color: #003049;
   margin: 2%;
+  margin-top: 8%;
+}
+
+form .searchs button {
+  color: #fff;
+  margin-top: 5.5%;
+  background-color: #003049;
+  border-radius: 10px;
+  font-size: 20px;
+  width: 25%;
+  height: 0%;
+  border-color: #003049;
+}
+
+form .searchs button:hover {
+  background-color: #FCBF49;
+  border-color: #FCBF49;
+  color: #003049;
+}
+
+form .contents {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+form .contents input {
+  border-radius: 10px;
+  width: 50%;
+  max-height: 4%;
+  border-color: #003049;
+  margin: 2%;
+  margin-top: 5%;
 }
 /*# sourceMappingURL=events.css.map */

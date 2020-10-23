@@ -21,7 +21,6 @@
         </div>
         <div class="col-6 col-md-6">
          <?php 
-         include './libs/db.php';
          
          $sql = 'SELECT `page_id`, `name`, `slug` FROM `pages` ORDER BY `sort_order`';
         $pdo_statement = $db->prepare($sql);
@@ -30,9 +29,10 @@
         // resultaat opvragen + variabel aanmaken voor een navigatie op te bouwen
         $all_pages = $pdo_statement->fetchAll();
 
+
             echo '<nav>';
          foreach($all_pages as $page) {
-             echo  '<a href="">' . $page['name'] . '</a>';
+             echo  '<a href="index.php?page_id=' . $page['page_id'] . ' "> ' . $page['name'] . '</a>';
          }
          echo '</nav>';
          

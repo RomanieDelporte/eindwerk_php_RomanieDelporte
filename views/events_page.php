@@ -1,5 +1,4 @@
 <?php 
-include './views/partials/home/header_home.php';
 
 
 
@@ -14,8 +13,6 @@ $sql_statement->execute(
     ]
 );
 $events = $sql_statement->fetchAll();
-
-
 ?>
 
 <!DOCTYPE html>
@@ -37,17 +34,16 @@ $events = $sql_statement->fetchAll();
     <div class="forms_add">
     <div class="container">
         <div class="row">
-
         <div class="col-8">
         <form method="POST" action="api/add_event.php">
-        <div class="search">
-                <div class="content">
+        <div class="searchs">
+                <div class="contents">
                 <form class="form-inline">
-                <input class="form-control mr-sm-2" value="<?= $search_string; ?>" name="event"
+                <input class="form-control mr-sm-2" name="event"
                             type="search" placeholder="Title toevoegen" aria-label="Search">
                             <input class="form-control mr-sm-2"  name="description"
                             type="search" placeholder="Description toevoegen" aria-label="Search">
-                        <button type="submit">Search</button>
+                        <button type="submit">Voeg Toe</button>
                 </div>
 </form>
             </div>
@@ -72,21 +68,16 @@ $events = $sql_statement->fetchAll();
             <div class="card-columns">
                 <?php 
    
-   foreach( $events as $event) {
-       include 'views/events.php';
-        }
-   ?>
+                foreach( $events as $event) {
+                    include './views/events.php';
+                    }
+                ?>
             </div>
         </div>
     </div>
 
 </body>
 
-<?php 
-
-include_once './views/partials/home/footer_home.php';
-
-?>
 
 
 </html>

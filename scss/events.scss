@@ -78,9 +78,9 @@ form {
 
     .search {
 
-        button {
+     button {
             color: #fff;
-            margin-top: 2.5%;
+            margin-top: 7.5%;
             background-color: $color_darkblue;
             border-radius: 10px;
             font-size: 20px;
@@ -101,7 +101,6 @@ form {
     .content {
         display: flex;
         justify-content: flex-end;
-        margin-top: 3%;
     }
 
     .content input {
@@ -110,6 +109,50 @@ form {
         max-height: 4%;
         border-color: $color-darkblue;
         margin: 2%;
+        margin-top: 8%;
+    }
+
+}
+
+
+
+form {
+
+
+    .searchs {
+
+        button {
+            color: #fff;
+            margin-top: 5.5%;
+            background-color: $color_darkblue;
+            border-radius: 10px;
+            font-size: 20px;
+            width: 25%;
+            height: 0%;
+            border-color: $color_darkblue;
+        }
+    }
+
+
+    .searchs button:hover {
+
+        background-color: $color_yellow;
+        border-color: $color_yellow;
+        color: $color_darkblue;
+    }
+
+    .contents {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .contents input {
+        border-radius: 10px;
+        width: 50%;
+        max-height: 4%;
+        border-color: $color-darkblue;
+        margin: 2%;
+        margin-top: 5%;
     }
 
 }

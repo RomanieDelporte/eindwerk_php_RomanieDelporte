@@ -1,6 +1,6 @@
 <?php 
 
-include './views/partials/home/header_home.php';
+include_once './libs/db.php';
 
 $sql = 'SELECT * FROM `events` ORDER BY `date` DESC LIMIT 3';
 
@@ -27,6 +27,8 @@ $events = $sql_statement->fetchAll();
 </head>
 
 <body>
+
+
   <div class="home">
     <div class="home__about">
       <h1>FE-pgm. Wie zijn we?</h1>
@@ -53,7 +55,7 @@ $events = $sql_statement->fetchAll();
             <div class="row">
               <div class="card-columns">
             <?php 
-   
+              
               foreach( $events as $event) {
               include './views/events.php';
               
@@ -70,10 +72,6 @@ $events = $sql_statement->fetchAll();
   </div>
 
 </body>
-<?php 
 
-include './views/partials/home/footer_home.php';
-
-?>
 
 </html>

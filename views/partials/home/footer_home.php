@@ -27,7 +27,6 @@
             <a href="#"><li>Events</li></a>
             <a href="#"><li>Eat-options</li></a>
             <a href="#"><li>Contact</li></a>
-
           </ul>
         </div>
     </div>

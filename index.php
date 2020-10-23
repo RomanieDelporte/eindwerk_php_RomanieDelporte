@@ -1,74 +1,46 @@
+<?php 
+
+include_once './libs/db.php';
+
+$v_id = $_GET['page_id'] ?? 1;
+    
+$sql= 'SELECT * from `pages`';
+$pdo_statement= $db->prepare($sql);
+$pdo_statement->execute();
+$all_pages = $pdo_statement->fetchAll();
+
+
+$sql = 'SELECT * FROM `pages` WHERE `page_id` = :p_id';
+$pdo_statement = $db->prepare($sql);
+$pdo_statement->execute([
+        ':p_id' => $v_id
+    ]);
+$current_page = $pdo_statement->fetchObject();
+
+$view = './views/' . $current_page->template . '.php';
+//Indien het php bestand niet bestaat gebruik dan page.php
+if (! file_exists($view)) {
+    $view = 'home.php';
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/scss/main.css">
-  <link
-    href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap"
-    rel="stylesheet">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Eindwerk_php</title>
+  <title>Document</title>
 </head>
 <body>
-  <div class="login">
-  <div class="container mt-4">
-    <div class="row login">
-      <div class="col-6 col-md-4">
-        <h1 class="login__name">fe-pgm</h1>
-      </div>
-      <div class="col-6 col-md-6">
-        <ul class="login__navigation">
-          <li>Home</li>
-          <li>Events</li>
-          <li>Eat-Options</li>
-          <li>Contact</li>
-        </ul>
-      </div>
-      <div class="col-6 col-md-2">
-        <button type="button" class="login__button_login">Login</button>
-      </div>
+<?php 
+    include_once './views/partials/home/header_home.php'; 
 
-    </div>
+    include_once $view;
 
-    <h1 class="login__create">Create Account</h1>
-    <div class="login__form">
-      <form>
-        <div class="form-group">
-          <label class="login__title" for="exampleInputEmail">Name</label>
-          <input type="text" class="form-control" id="exampleInputName" aria-describedby="Name"
-            placeholder="First name">
-        </div>
-        <div class="form-group login__email">
-          <label class="login__title" for="exampleInputEmail">Email address</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-            placeholder="Enter email">
-          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-        </div>
-        <div class="form-group login__password">
-          <label class="login__title" for="exampleInputPassword1">Password</label>
-          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-        </div>
-      </form>
+    include_once './views/partials/home/footer_home.php';
 
-    </div>
-    <div class="login__checkbox">
-      <div class="custom-control custom-checkbox">
-        <input type="checkbox" class="custom-control-input" id="customCheck1">
-        <label  class="custom-control-label" for="customCheck1">I agree to <span>the Terms</span> and <span>Privacy
-            Policy.</span>
-        </label>
-        <div class="login__register">
-          <div class="col-12 col-md-2">
-            <a href="/home.php"><button type="button" class="login__button_login">Registreer</button></a>
-          </div>
-        </div>
-      </div>    
-
-    </div>
-  </div>
-
+?>
 </body>
-
 </html>
+
+
