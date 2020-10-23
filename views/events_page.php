@@ -56,7 +56,7 @@ $events = $sql_statement->fetchAll();
                     <form class="form-inline">
                         <input class="form-control mr-sm-2" value="<?= $search_string; ?>" name="search_string"
                             type="search" placeholder="Zoekterm" aria-label="Search">
-                        <button type="submit">Search</button>
+                        <button  type="submit">Search</button>
                 </div>
             </div>
         </div> 

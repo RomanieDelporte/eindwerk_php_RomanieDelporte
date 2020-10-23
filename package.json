@@ -6,6 +6,7 @@
   "dependencies": {
     "@popperjs/core": "^2.5.3",
     "bootstrap": "^4.5.3",
+    "hover.css": "^2.3.2",
     "jquery": "^3.5.1",
     "sass": "^1.27.0"
   },
