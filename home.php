@@ -2,11 +2,7 @@
 
 include_once './libs/db.php';
 
-$sql = 'SELECT * FROM `events` ORDER BY `date` DESC LIMIT 3';
-
-$sql_statement = $db->prepare($sql);
-$sql_statement->execute();
-$events = $sql_statement->fetchAll();
+$events = Home::getEvents();
 
 ?>
 

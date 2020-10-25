@@ -1,0 +1,84 @@
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+// variabelen
+$color_darkblue: #003049;
+$color_yellow: #FCBF49;
+$color_white: #FFFF;
+$color-black: #0000;
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+//header 
+
+nav {
+    display: flex;
+}
+
+nav a {
+    display: block;
+    color: $color_white;
+    text-decoration: none;
+    margin: 2%;
+}
+
+
+
+
+// body 
+
+body {
+    font-family: 'Roboto Slab', serif;
+}
+
+
+.page {
+    margin-top: 5%;
+    padding-bottom: 2%;
+
+    &__title h2 {
+        font-size: 25px;
+        font-weight: 300;
+        color: $color_darkblue;
+    }
+
+    &__form  {
+        display: flex;
+        input {
+        width: 50%;
+        border-radius: 15px;
+        border: 2px solid $color_darkblue;
+        opacity: 2;
+        }
+
+        button {
+            border-radius: 10px;
+            width: 15%;
+            font-weight: 400;
+            text-transform: uppercase;
+            border: 2px solid $color_yellow;
+            background-color: $color_yellow;
+        }
+        
+    }
+
+    &__options {
+        h3 {
+          margin-top: 7%;  
+          font-weight: 300;
+          color: $color_yellow;
+        }
+
+        button {
+            border-radius: 10px;
+            width: 25%;
+            border: 2px solid $color_yellow;
+            background-color: $color-yellow;
+        }
+        
+    }
+}

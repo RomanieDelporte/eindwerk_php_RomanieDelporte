@@ -1,16 +1,6 @@
 <?php 
 
-$search_string= $_POST['search_string'] ?? '';
-
-$sql = 'SELECT * FROM `events` WHERE `title` LIKE :search_string LIMIT 20';
-
-$sql_statement = $db->prepare($sql);
-$sql_statement->execute(
-    [
-        ':search_string' => '%' . $search_string . '%'
-    ]
-);
-$events = $sql_statement->fetchAll();
+$events = Events::getAllEvents();
 
 ?>
 

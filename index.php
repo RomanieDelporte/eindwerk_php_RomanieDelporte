@@ -1,21 +1,26 @@
 <?php 
 
-include_once './libs/db.php';
+
+require 'app.php';
 
 $v_id = $_GET['page_id'] ?? 1;
+
+$current_page = Page::getById($v_id);
+
+$all_pages = Page::getAll();
     
-$sql= 'SELECT * from `pages`';
-$pdo_statement= $db->prepare($sql);
-$pdo_statement->execute();
-$all_pages = $pdo_statement->fetchAll();
+// $sql= 'SELECT * from `pages`';
+// $pdo_statement= $db->prepare($sql);
+// $pdo_statement->execute();
+// $all_pages = $pdo_statement->fetchAll();
 
 
-$sql = 'SELECT * FROM `pages` WHERE `page_id` = :p_id';
-$pdo_statement = $db->prepare($sql);
-$pdo_statement->execute([
-        ':p_id' => $v_id
-    ]);
-$current_page = $pdo_statement->fetchObject();
+// $sql = 'SELECT * FROM `pages` WHERE `page_id` = :p_id';
+// $pdo_statement = $db->prepare($sql);
+// $pdo_statement->execute([
+//         ':p_id' => $v_id
+//     ]);
+// $current_page = $pdo_statement->fetchObject();
 
 $view = './views/' . $current_page->template . '.php';
 //Indien het php bestand niet bestaat gebruik dan page.php
