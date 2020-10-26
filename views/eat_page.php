@@ -6,36 +6,36 @@
 
 
 
-if(isset($_POST['delivery'])) {
+// if(isset($_POST['delivery'])) {
     
-    $sql = 'SELECT * FROM `opportunities` WHERE `deliver` = FALSE';
+//     $sql = 'SELECT * FROM `opportunities` WHERE `deliver` = FALSE';
 
-    }
-    $delivery_line= $_POST['delivery'] ?? '';
+//     }
+//     $delivery_line= $_POST['delivery'] ?? '';
 
-    $sql_statement = $db->prepare($sql);
-    $sql_statement->execute(
-        [
-            ':delivery' =>  $delivery_line 
-        ]
-    );
+//     $sql_statement = $db->prepare($sql);
+//     $sql_statement->execute(
+//         [
+//             ':delivery' =>  $delivery_line 
+//         ]
+//     );
 
-if(isset($_POST['pickup'])) {
+// if(isset($_POST['pickup'])) {
     
-$sql = 'SELECT * FROM `opportunities` WHERE `deliver` = TRUE';
+// $sql = 'SELECT * FROM `opportunities` WHERE `deliver` = TRUE';
 
-}
+// }
 
-$pickup_line= $_POST['pickup'] ?? '';
-$sql_statement = $db->prepare($sql);
-$sql_statement->execute(
-    [
-        ':pickup' =>  $pickup_line 
-    ]
-);
-$all_options = $sql_statement->fetchAll();
-// // print_r($pickup_line);
-// // print_r($pickup);
+// $pickup_line= $_POST['pickup'] ?? '';
+// $sql_statement = $db->prepare($sql);
+// $sql_statement->execute(
+//     [
+//         ':pickup' =>  $pickup_line 
+//     ]
+// );
+// $all_options = $sql_statement->fetchAll();
+// // // print_r($pickup_line);
+// // // print_r($pickup);
 ?>
 
 

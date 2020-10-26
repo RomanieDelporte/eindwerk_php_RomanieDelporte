@@ -3,8 +3,6 @@
 
 
 class Home extends BaseModel {
-
-
     public static function getEvents() {
         global $db;
 

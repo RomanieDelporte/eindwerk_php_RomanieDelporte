@@ -52,7 +52,7 @@ $events = Home::getEvents();
               <div class="card-columns">
             <?php 
               
-              foreach( $events as $event) {
+              foreach($events as $event) {
               include './views/events.php';
               
             }
