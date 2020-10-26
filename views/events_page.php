@@ -1,6 +1,7 @@
 <?php 
 
 $events = Events::getAllEvents();
+$search_string= $_POST['search_string'] ?? '';
 
 ?>
 
