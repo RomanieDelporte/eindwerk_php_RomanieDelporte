@@ -2,40 +2,40 @@
 
   require './libs/db.php';
 
+    $all_options = EatOptions::getOptions();
 
 
-
- if(isset($_POST['delivery'])) {
+//  if(isset($_POST['delivery'])) {
     
-    $sql = 'SELECT * FROM `opportunities` WHERE `deliver` = FALSE';
+//     $sql = 'SELECT * FROM `opportunities` WHERE `deliver` = FALSE';
 
-     }     $delivery_line= $_POST['delivery'] ?? '';
+//      }     $delivery_line= $_POST['delivery'] ?? '';
 
-     $sql_statement = $db->prepare($sql);
-     $sql_statement->execute(
-         [
-            ':delivery' =>  $delivery_line 
-         ]
-     );
+//      $sql_statement = $db->prepare($sql);
+//      $sql_statement->execute(
+//          [
+//             ':delivery' =>  $delivery_line 
+//          ]
+//      );
 
- if(isset($_POST['pickup'])) {
+//  if(isset($_POST['pickup'])) {
     
- $sql = 'SELECT * FROM `opportunities` WHERE `deliver` = TRUE';
+//  $sql = 'SELECT * FROM `opportunities` WHERE `deliver` = TRUE';
 
- }
+//  }
 
- $pickup_line= $_POST['pickup'] ?? '';
- $sql_statement = $db->prepare($sql);
- $sql_statement->execute(
-     [
-         ':pickup' =>  $pickup_line 
-     ]
- );
- $all_options = $sql_statement->fetchAll();
- //  $all_options = EatOptions::getOptions();
+//  $pickup_line= $_POST['pickup'] ?? '';
+//  $sql_statement = $db->prepare($sql);
+//  $sql_statement->execute(
+//      [
+//          ':pickup' =>  $pickup_line 
+//      ]
+//  );
+//  $all_options = $sql_statement->fetchAll();
+//  //  $all_options = EatOptions::getOptions();
 
-// // // // print_r($pickup_line);
-// // // // print_r($pickup);
+// // // // // print_r($pickup_line);
+// // // // // print_r($pickup);
 ?>
 
 
@@ -45,7 +45,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="scss/eat_page.css">
+    <link rel="stylesheet" href="scss/eat_page.css?<?= time();?>">
     <title>Document</title>
 </head>
 
@@ -77,25 +77,14 @@
                     </form>
                 </div>
                 <div class="col-8">
-
+                <div class="page__options">
                 <?php 
                     foreach( $all_options as $option) {
                         // echo var_dump($optie);
                         include './views/eat.php';
                         }
                 ?>
-                    <!-- <?php 
-                    // foreach($all_options as $option) {
-                    //     include './views/eat.php';
-                    // }
-                    // ?>
-
-                    // <?php 
-                    //     foreach ($all_options as $option) {
-                    //          include './views/deliver.php';
-                    //     }
-                    
-                    // ?> -->
+                </div>
                 </div>
             </div>
 
