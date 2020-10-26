@@ -37,6 +37,7 @@ if (! file_exists($view)) {
   <title>Document</title>
 </head>
 <body>
+
 <?php 
     include_once './views/partials/home/header_home.php'; 
 

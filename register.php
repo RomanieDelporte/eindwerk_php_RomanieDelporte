@@ -1,3 +1,46 @@
+<?php
+
+include 'app.php';
+
+if( isset($_POST['register'] ) ) {
+
+    //TODO: validatie op velden... (bv lengte van wachtwoord)
+    //TODO: Controle of email adres reeds gebruikt wordt
+    $sql = 'SELECT COUNT(`email`) as total from `users` WHERE `email` = :email';
+    $pdo_statement = $db->prepare($sql);
+    $pdo_statement->execute( [ 
+    ':email' => $_POST['email'] ?? '',
+    ] );
+    $total = (int) $pdo_statement->fetchColumn();
+
+    if($total > 0) {
+        echo 'email bestaat al...';
+    } else {
+
+        //SQL om all info op te vragen van de huidige page_id ($v_id)
+        $sql = 'INSERT INTO `users` (`firstname`, `lastname`, `email`, `password`)
+                VALUES (:firstname, :lastname, :email, :password)';
+        $pdo_statement = $db->prepare($sql);
+        $pdo_statement->execute( [ 
+            ':firstname' => $_POST['firstname'] ?? '',
+            ':lastname' => $_POST['lastname'] ?? '',
+            ':email' => $_POST['email'] ?? '',
+            ':password' => password_hash( $_POST['password'], PASSWORD_DEFAULT ),
+        ] );
+
+        $user_id = $db->lastInsertId();
+        
+        $_SESSION['user_id'] = $user_id;
+        header('location: index.php');
+
+    }
+
+    
+}
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -27,30 +70,35 @@
         </ul>
       </div>
       <div class="col-6 col-md-2">
-        <button type="button" class="login__button_login">Login</button>
+        <button type="button" class="login__button_login"><a href="login.php">Login</a></button> 
       </div>
 
     </div>
 
     <h1 class="login__create">Create Account</h1>
     <div class="login__form">
-      <form>
+      <form method="POST">
         <div class="form-group">
-          <label class="login__title" for="exampleInputEmail">Name</label>
-          <input type="text" class="form-control" id="exampleInputName" aria-describedby="Name"
+          <label class="login__title" for="exampleInputEmail">Firstname</label>
+          <input  name="firstname" type="text" class="form-control" id="exampleInputName" aria-describedby="Name"
             placeholder="First name">
+        </div>
+        <div class="form-group">
+          <label class="login__title" for="exampleInputEmail">Lastname</label>
+          <input  name="lastname" type="text" class="form-control" id="exampleInputName" aria-describedby="Name"
+            placeholder="Lastname">
         </div>
         <div class="form-group login__email">
           <label class="login__title" for="exampleInputEmail">Email address</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+          <input name="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
             placeholder="Enter email">
           <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
         </div>
         <div class="form-group login__password">
           <label class="login__title" for="exampleInputPassword1">Password</label>
-          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+          <input name="password" type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
         </div>
-      </form>
+     
 
     </div>
     <div class="login__checkbox">
@@ -61,10 +109,11 @@
         </label>
         <div class="login__register">
           <div class="col-12 col-md-2">
-            <a href="/home.php"><button type="button" class="login__button_login">Registreer</button></a>
-          </div>
+            <button type="submit" name="register">Registreer</button>
         </div>
-      </div>    
+        </div>
+      </div>  
+     </form>  
     </div>
   </div>
 </body>

@@ -10860,6 +10860,33 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  color: white;
+}
+
+.login__profile a {
+  border: 2px solid #FCBF49;
+  width: 120%;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  border-radius: 10px;
+  padding: 3%;
+  margin: 5%;
+  color: #FFFF;
+  text-decoration: none;
+}
+
+.login__profile a:nth-child(1) {
+  background-color: #FCBF49;
+}
+
+.login__profile a:hover:nth-child(2) {
+  background-color: #FCBF49;
+  color: #003049;
 }
 
 .login__profile span {
@@ -10879,7 +10906,7 @@ nav {
 }
 
 a:hover {
-  color: #FCBF49;
+  color: #003049;
 }
 
 nav a {

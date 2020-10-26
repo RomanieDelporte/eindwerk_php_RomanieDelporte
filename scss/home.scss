@@ -69,6 +69,31 @@ body {
 
     &__profile {
         display: flex;
+        color: white;
+
+    
+        a {
+            border: 2px solid $color_yellow;
+            width: 120%;
+            height: 40px;
+            display: flex;
+            justify-content: space-evenly;
+            border-radius: 10px;
+            padding: 3%;
+            margin: 5%;
+            color: $color_white;
+            text-decoration: none;
+        }
+
+        
+
+        a:nth-child(1) {
+            background-color: $color_yellow;
+        }
+        a:hover:nth-child(2){
+            background-color: $color_yellow;
+            color: $color_darkblue;
+        }
 
         span {
             color: $color_yellow;
@@ -81,6 +106,9 @@ body {
         }
     }
 
+    
+    
+
 }
 
 // php header dynamisch
@@ -89,8 +117,9 @@ nav {
     display: flex;
 }
 a:hover {
-    color: $color_yellow;
+    color: $color_darkblue;
 }
+
 
 
 nav a {

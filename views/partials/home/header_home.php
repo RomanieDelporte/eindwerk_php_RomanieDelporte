@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="scss/home.css">
+  <link rel="stylesheet" href="scss/home.css?<?= time();?>">
   <script src="https://kit.fontawesome.com/bd99fa10f5.js" crossorigin="anonymous"></script>
   <link
     href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap"
@@ -20,7 +21,7 @@
           <h1 class="login__name">Fe-pgm</h1>
         </div>
         <div class="col-6 col-md-6">
-         <?php 
+          <?php 
          
          $sql = 'SELECT `page_id`, `name`, `slug` FROM `pages` ORDER BY `sort_order`';
         $pdo_statement = $db->prepare($sql);
@@ -39,11 +40,18 @@
          ?>
         </div>
         <div class="login__profile col-6 col-md-2">
-          <p class="login__name__after">Hallo Romanie</p>
-          <i class="fas fa-chevron-circle-down"></i>
+
+          <?php if ($user_id) : ?>
+          Hallo <?= $user->firstname; ?>, <a  href="logoff.php">Uitloggen</a>
+          <?php else : ?>
+          <a href="login.php">Inloggen</a> <a  href="register.php">Registreren</a>
+          <?php endif; ?>
+          <!-- <p class="login__name__after">Hallo Romanie</p>
+          <i class="fas fa-chevron-circle-down"></i> -->
         </div>
       </div>
     </div>
   </div>
 </body>
+
 </html>

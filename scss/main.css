@@ -10887,6 +10887,19 @@ body {
   margin-top: 5%;
 }
 
+.login__register button {
+  border: 2px solid #FCBF49;
+  background-color: #FCBF49;
+  color: #003049;
+  border-radius: 10px;
+  width: 70%;
+}
+
+.login__register button button:hover {
+  color: #FFFF;
+  background-color: #003049;
+}
+
 .login__form .form-control {
   width: 130%;
   background-color: #FCBF49;
