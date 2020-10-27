@@ -10921,4 +10921,69 @@ body {
 .login__checkbox span {
   color: #FCBF49;
 }
+
+.form {
+  margin-top: 15%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.form h1 {
+  color: #FFFF;
+}
+
+.form__title {
+  color: #FCBF49;
+}
+
+.form__control {
+  width: 90%;
+}
+
+.form__register {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.form__register button {
+  background-color: #FCBF49;
+  color: #003049;
+  padding: 1%;
+  border-radius: 10px;
+  width: 20%;
+  border: 2px solid #FCBF49;
+}
+
+.form__email input {
+  width: 60%;
+}
+
+.form__website {
+  line-height: 150%;
+}
+
+.form__website h2 {
+  color: #FCBF49;
+  font-size: 20px;
+}
+
+.form__website p {
+  color: #FFFF;
+}
+
+.form__website button {
+  background-color: #FCBF49;
+  color: #003049;
+  padding: 1%;
+  border-radius: 10px;
+  width: 20%;
+  border: 2px solid #FCBF49;
+}
+
+.form__website a {
+  color: #003049;
+  text-decoration: none;
+}
 /*# sourceMappingURL=main.css.map */

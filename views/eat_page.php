@@ -2,7 +2,10 @@
 
   require './libs/db.php';
 
-    $all_options = EatOptions::getOptions();
+  $delivery = $_POST['delivery'] ?? 0;
+  $pickup = $_POST['pickup'] ?? 1;
+
+  $all_options = EatOptions::getOptions($delivery, $pickup);
 
 
 //  if(isset($_POST['delivery'])) {
@@ -32,10 +35,6 @@
 //      ]
 //  );
 //  $all_options = $sql_statement->fetchAll();
-//  //  $all_options = EatOptions::getOptions();
-
-// // // // // print_r($pickup_line);
-// // // // // print_r($pickup);
 ?>
 
 

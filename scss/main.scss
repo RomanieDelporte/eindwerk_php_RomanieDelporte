@@ -32,7 +32,6 @@ body {
         font-size: 30px;
     }
 
-
     &__button_login {
         border: 2px solid $color_yellow;
         border-radius: 5px;
@@ -109,6 +108,8 @@ body {
 
 
 .login__form {
+
+  
     .form-control {
         width: 130%;
         background-color: $color_yellow;
@@ -132,4 +133,81 @@ body {
     span {
         color: $color_yellow;
     }
+}
+
+
+// login content 
+
+.form {
+    margin-top: 15%;
+    display: flex;
+  
+    
+    h1 {
+       color: $color_white;
+     }
+    &__title {
+        color: $color_yellow;
+    }
+
+    &__control {
+        width: 90%;
+    }
+
+    &__register  {
+        display: flex;
+        
+        button {
+            background-color: $color_yellow;
+            color:$color_darkblue;
+            padding:1%;
+            border-radius: 10px;
+            width: 20%;
+            border: 2px solid $color_yellow;
+        }
+
+
+
+            
+    }
+
+    &__email {
+        
+        input {
+            width: 60%;
+        }
+
+    }
+
+    &__website {
+        line-height: 150%;
+        h2 {
+            color:$color_yellow;
+            font-size: 20px;
+        }
+
+        p {
+            color:$color_white;
+        }
+
+        button {
+            background-color: $color_yellow;
+            color:$color_darkblue;
+            padding:1%;
+            border-radius: 10px;
+            width: 20%;
+            border: 2px solid $color_yellow;
+        }
+        
+        a {
+            color: $color_darkblue;
+            text-decoration: none;
+
+        }
+
+      
+        
+    }
+    
+
 }

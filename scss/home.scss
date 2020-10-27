@@ -116,8 +116,10 @@ body {
 nav {
     display: flex;
 }
-a:hover {
-    color: $color_darkblue;
+nav a:hover {
+    color: $color_yellow;
+    text-decoration: none;
+    
 }
 
 

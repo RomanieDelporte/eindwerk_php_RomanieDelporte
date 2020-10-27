@@ -10905,8 +10905,9 @@ nav {
   display: flex;
 }
 
-a:hover {
-  color: #003049;
+nav a:hover {
+  color: #FCBF49;
+  text-decoration: none;
 }
 
 nav a {

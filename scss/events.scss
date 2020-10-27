@@ -49,6 +49,13 @@ body {
         max-width: 100%;
         max-height: 180px;
         border-radius: 10px;
+
+    }
+
+    &__event:hover {
+        transform: translateY(-5px) scale(1.005) translateZ(0);
+        box-shadow: 0 24px 36px rgba(0,0,0,0.11),
+        0 24px 46px var(--box-shadow-color);
     }
 
     .card-title {
