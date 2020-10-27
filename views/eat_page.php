@@ -2,8 +2,8 @@
 
   require './libs/db.php';
 
-  $delivery = $_POST['delivery'] ?? 0;
-  $pickup = $_POST['pickup'] ?? 1;
+  $delivery = $_GET['delivery'] ?? null;
+  $pickup = $_GET['pickup'] ?? null;
 
   $all_options = EatOptions::getOptions($delivery, $pickup);
 
@@ -54,6 +54,7 @@
             <div class="row">
                 <div class="col-4 page__title">
                     <h2>Aantal Restaurants</h2>
+                    
                 </div>
                 <div class="col-8">
                     <form>
@@ -69,11 +70,14 @@
             <div class="row">
                 <div class="col-4 page__options">
                     <h3>Selecteer</h3>
-                    <form method="POST">
+                    <a href="index.php?page_id=3&delivery=1">Delivery</a>
+                    <a href="index.php?page_id=3&pickup=1">Pickup</a>
+                    <!-- <form method="POST">
+
                         <button method="POST" name="delivery" value="<?= $delivery_line; ?>"
                             type="submit">Delivery</button>
                         <button method="POST" name="pickup" value="<?= $pickup_line; ?>" type="submit">Pickup</button>
-                    </form>
+                    </form> -->
                 </div>
                 <div class="col-8">
                 <div class="page__options">
