@@ -27,13 +27,12 @@
             <div class="row">
                 <div class="col-4 page__title">
                     <h2>Aantal Restaurants</h2>
-                    
                 </div>
                 <div class="col-8">
                     <form>
                         <div class="page__form">
                             <form class="form-inline">
-                                <input class="form-control mr-sm-2"  name="search_string" type="search"
+                                <input class="form-control mr-sm-2" name="search_string" type="search"
                                     placeholder="Zoekterm" aria-label="Search">
                                 <button type="submit">Search</button>
                         </div>
@@ -47,19 +46,17 @@
                     <a href="index.php?page_id=3&pickup=1">Pickup</a>
                 </div>
                 <div class="col-8">
-                <div class="page__options">
-                <?php 
+                    <div class="page__options">
+                        <?php 
                     foreach( $all_options as $option) {
                         // echo var_dump($optie);
                         include './views/eat.php';
                         }
-                ?>
-                </div>
+                        ?>
+                    </div>
                 </div>
             </div>
-
         </div>
     </div>
 </body>
-
 </html>

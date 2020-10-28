@@ -37,6 +37,7 @@ body {
 
 
 .page {
+    
     margin-top: 5%;
     padding-bottom: 2%;
 
@@ -48,10 +49,10 @@ body {
         margin-bottom: 2%;
         padding: 2%;
         display: flex;
+        
     }
 
     &__title h2 {     
-        
         font-size: 20px;
         font-weight: 300;
         color: $color-darkblue;

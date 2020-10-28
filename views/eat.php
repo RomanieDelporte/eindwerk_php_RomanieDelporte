@@ -17,3 +17,4 @@
 <a href="detail_page.php?q_id=<?= $option["eat_id"]; ?>">Lees meer ... </a>
 </div> 
 </div>
+
