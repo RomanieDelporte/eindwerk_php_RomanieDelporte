@@ -1,40 +1,13 @@
 <?php 
 
-  require './libs/db.php';
+//   require './libs/db.php'; 
+ 
 
-  $delivery = $_GET['delivery'] ?? null;
-  $pickup = $_GET['pickup'] ?? null;
+  $delivery = $_POST['delivery'] ?? null;
+  $pickup = $_POST['pickup'] ?? null;
 
   $all_options = EatOptions::getOptions($delivery, $pickup);
 
-
-//  if(isset($_POST['delivery'])) {
-    
-//     $sql = 'SELECT * FROM `opportunities` WHERE `deliver` = FALSE';
-
-//      }     $delivery_line= $_POST['delivery'] ?? '';
-
-//      $sql_statement = $db->prepare($sql);
-//      $sql_statement->execute(
-//          [
-//             ':delivery' =>  $delivery_line 
-//          ]
-//      );
-
-//  if(isset($_POST['pickup'])) {
-    
-//  $sql = 'SELECT * FROM `opportunities` WHERE `deliver` = TRUE';
-
-//  }
-
-//  $pickup_line= $_POST['pickup'] ?? '';
-//  $sql_statement = $db->prepare($sql);
-//  $sql_statement->execute(
-//      [
-//          ':pickup' =>  $pickup_line 
-//      ]
-//  );
-//  $all_options = $sql_statement->fetchAll();
 ?>
 
 
@@ -60,7 +33,7 @@
                     <form>
                         <div class="page__form">
                             <form class="form-inline">
-                                <input class="form-control mr-sm-2" name="search_string" type="search"
+                                <input class="form-control mr-sm-2"  name="search_string" type="search"
                                     placeholder="Zoekterm" aria-label="Search">
                                 <button type="submit">Search</button>
                         </div>
@@ -72,12 +45,6 @@
                     <h3>Selecteer</h3>
                     <a href="index.php?page_id=3&delivery=1">Delivery</a>
                     <a href="index.php?page_id=3&pickup=1">Pickup</a>
-                    <!-- <form method="POST">
-
-                        <button method="POST" name="delivery" value="<?= $delivery_line; ?>"
-                            type="submit">Delivery</button>
-                        <button method="POST" name="pickup" value="<?= $pickup_line; ?>" type="submit">Pickup</button>
-                    </form> -->
                 </div>
                 <div class="col-8">
                 <div class="page__options">

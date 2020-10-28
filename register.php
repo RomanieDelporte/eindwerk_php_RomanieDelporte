@@ -1,6 +1,6 @@
 <?php
 
-include 'app.php';
+ include 'app.php';
 
 if( isset($_POST['register'] ) ) {
 

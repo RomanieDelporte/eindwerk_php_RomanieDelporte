@@ -10829,10 +10829,26 @@ body {
   padding-bottom: 2%;
 }
 
+.page__detail {
+  border: 2px solid #003049;
+  border-radius: 10px;
+  width: 65%;
+  margin-top: 5%;
+  margin-bottom: 2%;
+  padding: 2%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .page__title h2 {
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 300;
   color: #003049;
+}
+
+.page__content {
+  margin-left: 5%;
 }
 
 .page__form {
@@ -10857,16 +10873,56 @@ body {
   background-color: #FCBF49;
 }
 
+.page__time {
+  font-size: 10px;
+  margin-bottom: -6%;
+  margin-left: 2%;
+}
+
+.page__subtitle {
+  font-size: 12px;
+  font-weight: 300;
+}
+
+.page__icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.page__methods {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #FCBF49;
+}
+
+.page__free {
+  margin-left: 5%;
+  margin-top: -2%;
+}
+
 .page__options h3 {
   margin-top: 7%;
   font-weight: 300;
   color: #FCBF49;
 }
 
-.page__options button {
+.page__options a {
   border-radius: 10px;
   width: 25%;
   border: 2px solid #FCBF49;
   background-color: #FCBF49;
+  padding: 1%;
+  color: #003049;
+}
+
+.page__options a:hover {
+  text-decoration: none;
+}
+
+.page__img img {
+  width: 100px;
+  border-radius: 10px;
 }
 /*# sourceMappingURL=eat_page.css.map */

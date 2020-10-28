@@ -15,7 +15,9 @@ class EatOptions extends BaseModel {
         }
 
         $sql_statement = $db->prepare($sql);
-        $sql_statement->execute();
+        $sql_statement->execute(
+        
+        );
 
         return $sql_statement->fetchAll();
     }

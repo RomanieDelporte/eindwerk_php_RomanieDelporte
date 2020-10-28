@@ -40,10 +40,25 @@ body {
     margin-top: 5%;
     padding-bottom: 2%;
 
-    &__title h2 {
-        font-size: 25px;
+    &__detail {
+        border: 2px solid $color-darkblue;
+        border-radius: 10px;
+        width: 65%;
+        margin-top: 5%;
+        margin-bottom: 2%;
+        padding: 2%;
+        display: flex;
+    }
+
+    &__title h2 {     
+        
+        font-size: 20px;
         font-weight: 300;
-        color: $color_darkblue;
+        color: $color-darkblue;
+    }
+
+    &__content {
+        margin-left: 5%;
     }
 
     &__form  {
@@ -66,6 +81,33 @@ body {
         
     }
 
+    &__time {
+        font-size: 10px;
+        margin-bottom: -6%;
+        margin-left:2%;
+    }
+
+    &__subtitle {
+        font-size: 12px;
+        font-weight: 300;
+    }
+
+    &__icon {
+        display: flex;
+
+    }
+
+    &__methods {
+        display: flex;
+        color: $color_yellow;
+
+       
+    } 
+    &__free {
+            margin-left: 5%;
+            margin-top: -2%;
+        }
+    
     &__options {
         h3 {
           margin-top: 7%;  
@@ -73,11 +115,18 @@ body {
           color: $color_yellow;
         }
 
-        button {
+        a {
             border-radius: 10px;
             width: 25%;
             border: 2px solid $color-yellow;
             background-color: $color-yellow;
+            padding: 1%;
+            color: $color_darkblue;
+
+        }
+
+        a:hover {
+            text-decoration: none;
         }
         
     }
@@ -86,3 +135,10 @@ body {
 
 }
 
+
+.page__img {
+    img {
+        width: 100px;
+        border-radius: 10px;
+    }
+}

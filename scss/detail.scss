@@ -20,133 +20,31 @@ body {
     font-family: 'Roboto Slab', serif;
 }
 
-.header__home {
-    height: 120px;
-    background-color: $color_darkblue;
-    padding-top: 2%;
-    border: 2px solid;
-    border-radius: 0em 0em 2em 2em;
-    margin-right: 5%;
-    margin-left: 5%;
- }
+// body 
 
-// header
-.login {
-    &__name {
+
+.detail {
+    margin-top: 5%;
+    padding-bottom: 5%;
+    
+    &__content {
+        display: flex;
+    }
+
+    &__content h1 {
         color: $color_yellow;
-        text-transform: uppercase;
+    }
+
+    &__content h2 {
         font-size: 30px;
-    }
-
-    &__title {
-        color: $color_yellow;
-        text-transform: uppercase;
-    }
-
-
-    &__button_login {
-        border: 2px solid $color_yellow;
-        border-radius: 5px;
-        width: 90%;
-        padding: 4px;
-        background-color: $color_darkblue;
-        color: $color_white;
-        font-weight: 100;
-        text-align: center;
-
-    }
-
-    &__navigation {
-        list-style: none;
-        display: flex;
-        color: $color_white;
-
-        li {
-            margin: 2%;
-        }
-
-        li:hover {
-            color: $color_yellow;
-            text-decoration: underline;
-        }
-
-        .nav-item {
-            display: flex;
-            list-style: none;
-        }
-    }
-
-    &__button_login:hover {
-        background-color: $color_yellow;
-        color: $color_darkblue;
-    }
-
-    &__name__after {
-        color: $color_white;
-        display: flex;
-        margin-top: 7%;
-    }
-
-    &__profile {
-        display: flex;
-
-        span {
-            color: $color_yellow;
-        }
-
-        i {
-            margin-left: 4%;
-            margin-top: 9%;
-            color: $color_yellow;
-        }
-    }
-
-}
-
-
-//BODY 
-
-.detail__paint {
-    .container {
-        background-color: $color_yellow;
-        margin-top: 10%;
-    }
-    padding-bottom: 20%;
-    .detail__title  {
-        
-        h1 {
-            margin-left: 5%;
-        color: $color_white;
         font-weight: 300;
-        text-transform: uppercase;
-        margin-top: 20%;
-        }
-        
     }
-        p {
-            font-weight: 200;
-            margin-left: 5%;
-            color: $color_darkblue;
-            font-style: italic;
-        }
-        p:nth-child(3) {
-            color: $color_darkblue;
-            font-weight: 500;
-        }
-        img {
-            width: 80%;
-            height: 75%;
-            margin-top: 5%;
-            border-radius: 10px;
-        }
 
-        img:nth-child(2) {
-            position: absolute;
-            margin-left: -65%;
-            margin-top: 35%;
-        }
+    &__content img {
+        width: 60%;
+        border-radius: 10px;
+    }
 }
-
 
 
 
@@ -178,6 +76,7 @@ body {
     }
 .row {padding-bottom: 2%;}
     .home__navigation {
+        line-height: 2.4;
         h2 {
             color: $color_yellow;
         }
@@ -205,5 +104,3 @@ body {
     }
 
 }
-
-

@@ -10811,131 +10811,29 @@ body {
   font-family: 'Roboto Slab', serif;
 }
 
-.header__home {
-  height: 120px;
-  background-color: #003049;
-  padding-top: 2%;
-  border: 2px solid;
-  border-radius: 0em 0em 2em 2em;
-  margin-right: 5%;
-  margin-left: 5%;
-}
-
-.login__name {
-  color: #FCBF49;
-  text-transform: uppercase;
-  font-size: 30px;
-}
-
-.login__title {
-  color: #FCBF49;
-  text-transform: uppercase;
-}
-
-.login__button_login {
-  border: 2px solid #FCBF49;
-  border-radius: 5px;
-  width: 90%;
-  padding: 4px;
-  background-color: #003049;
-  color: #FFFF;
-  font-weight: 100;
-  text-align: center;
-}
-
-.login__navigation {
-  list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  color: #FFFF;
-}
-
-.login__navigation li {
-  margin: 2%;
-}
-
-.login__navigation li:hover {
-  color: #FCBF49;
-  text-decoration: underline;
-}
-
-.login__navigation .nav-item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  list-style: none;
-}
-
-.login__button_login:hover {
-  background-color: #FCBF49;
-  color: #003049;
-}
-
-.login__name__after {
-  color: #FFFF;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-top: 7%;
-}
-
-.login__profile {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.login__profile span {
-  color: #FCBF49;
-}
-
-.login__profile i {
-  margin-left: 4%;
-  margin-top: 9%;
-  color: #FCBF49;
-}
-
-.detail__paint {
-  padding-bottom: 20%;
-}
-
-.detail__paint .container {
-  background-color: #FCBF49;
-  margin-top: 10%;
-}
-
-.detail__paint .detail__title h1 {
-  margin-left: 5%;
-  color: #FFFF;
-  font-weight: 300;
-  text-transform: uppercase;
-  margin-top: 20%;
-}
-
-.detail__paint p {
-  font-weight: 200;
-  margin-left: 5%;
-  color: #003049;
-  font-style: italic;
-}
-
-.detail__paint p:nth-child(3) {
-  color: #003049;
-  font-weight: 500;
-}
-
-.detail__paint img {
-  width: 80%;
-  height: 75%;
+.detail {
   margin-top: 5%;
-  border-radius: 10px;
+  padding-bottom: 5%;
 }
 
-.detail__paint img:nth-child(2) {
-  position: absolute;
-  margin-left: -65%;
-  margin-top: 35%;
+.detail__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.detail__content h1 {
+  color: #FCBF49;
+}
+
+.detail__content h2 {
+  font-size: 30px;
+  font-weight: 300;
+}
+
+.detail__content img {
+  width: 60%;
+  border-radius: 10px;
 }
 
 .home__footer {
@@ -10965,6 +10863,10 @@ body {
 
 .home__footer .row {
   padding-bottom: 2%;
+}
+
+.home__footer .home__navigation {
+  line-height: 2.4;
 }
 
 .home__footer .home__navigation h2 {

@@ -1,5 +1,5 @@
 <?php
-include 'app.php';
+require 'app.php';
 $message = '';
 if( isset($_POST['login'] ) ) {
 
