@@ -1,11 +1,11 @@
 <?php 
 class EatOptions extends BaseModel {
 
-
     public static function getOptions($delivery, $pickup = null) {
         global $db;
 
         $sql = 'SELECT * FROM `opportunities`';
+
         if($delivery !== null) {
             $sql .= 'WHERE `deliver` = 1';
         }

@@ -1,7 +1,8 @@
 <?php 
 
+$search_string= $_GET['search_string'] ?? '';
+
 $events = Events::getAllEvents();
-$search_string= $_POST['search_string'] ?? '';
 
 ?>
 
@@ -22,37 +23,35 @@ $search_string= $_POST['search_string'] ?? '';
 
 <body>
     <div class="forms_add">
-    <div class="container">
-        <div class="row">
-        <div class="col-8">
-        <form method="POST" action="api/add_event.php">
-        <div class="searchs">
-                <div class="contents">
-                <form class="form-inline">
-                <input class="form-control mr-sm-2" name="event"
-                            type="search" placeholder="Title toevoegen" aria-label="Search">
-                            <input class="form-control mr-sm-2"  name="description"
-                            type="search" placeholder="Description toevoegen" aria-label="Search">
-                        <button type="submit">Voeg Toe</button>
+        <div class="container">
+            <div class="row">
+                <div class="col-8">
+                    <form method="POST" action="api/add_event.php" enctype="multipart/form-data">
+                        <div class="searchs">
+                            <div class="contents">
+                                <input class="form-control mr-sm-2" name="event" type="search"
+                                    placeholder="Title toevoegen" aria-label="Search">
+                                <input class="form-control mr-sm-2" name="description" type="search"
+                                    placeholder="Description toevoegen" aria-label="Search">
+                                <button type="submit">Voeg Toe</button>
+                            </div>
+                        </div>
+                    </form>
                 </div>
-</form>
-            </div>
-        </form> 
-    </div>
-    <div class="col-4">
-        <form method="POST">
-            <div class="search">
-                <div class="content">
-                    <form  class="form-inline">
-                        <input class="form-control mr-sm-2" value="<?= $search_string; ?>" name="search_string"
-                            type="search" placeholder="Zoekterm" aria-label="Search">
-                        <button type="submit">Search</button>
+                <div class="col-4">
+                    <form method="POST">
+                        <div class="search">
+                            <div class="content">
+                                <form class="form-inline">
+                                    <input class="form-control mr-sm-2" value="<?= $search_string; ?>"
+                                        name="search_string" type="search" placeholder="Zoekterm" aria-label="Search">
+                                    <button type="submit">Search</button>
+                            </div>
+                        </div>
                 </div>
             </div>
-        </div> 
         </div>
     </div>
-</div>
     <div class="container">
         <div class="row">
             <div class="card-columns">

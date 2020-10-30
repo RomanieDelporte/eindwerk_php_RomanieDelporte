@@ -10824,112 +10824,37 @@ body {
   font-family: 'Roboto Slab', serif;
 }
 
-.page {
+.contact {
   margin-top: 5%;
-  padding-bottom: 2%;
+  margin-bottom: 5%;
 }
 
-.page__detail {
-  border: 2px solid #003049;
-  border-radius: 10px;
-  width: 65%;
-  margin-top: 5%;
-  margin-bottom: 2%;
-  padding: 2%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.contact__image img {
+  width: 100%;
 }
 
-.page__title h2 {
-  font-size: 20px;
-  font-weight: 300;
-  color: #003049;
-}
-
-.page__content {
-  margin-left: 5%;
-}
-
-.page__form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.page__form input {
-  width: 50%;
-  border-radius: 15px;
-  border: 2px solid #003049;
-  opacity: 2;
-}
-
-.page__form button {
-  border-radius: 10px;
-  width: 15%;
-  font-weight: 400;
-  text-transform: uppercase;
-  border: 2px solid #FCBF49;
+.contact__details {
   background-color: #FCBF49;
-}
-
-.page__time {
-  font-size: 10px;
-  margin-bottom: -6%;
-  margin-left: 2%;
-}
-
-.page__subtitle {
-  font-size: 12px;
-  font-weight: 300;
-}
-
-.page__icon {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.page__methods {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  color: #FCBF49;
-}
-
-.page__free {
-  margin-left: 5%;
-  margin-top: -2%;
-}
-
-.page__options h3 {
-  margin-top: 7%;
-  font-weight: 300;
-  color: #FCBF49;
-}
-
-.page__options a {
-  border-radius: 10px;
-  width: 25%;
-  border: 2px solid #FCBF49;
-  background-color: #FCBF49;
-  padding: 1%;
-  color: #003049;
-}
-
-.page__options a:hover {
-  text-decoration: none;
-}
-
-.page__detailpage a {
-  background-color: #003049;
-  color: #FFFF;
+  width: 90%;
+  height: 200px;
   padding: 2%;
-  border: 2px solid #003049;
+  margin-top: 9%;
 }
 
-.page__img img {
-  width: 100px;
-  border-radius: 10px;
+.contact__details h1 {
+  color: #003049;
+  font-weight: 300;
 }
-/*# sourceMappingURL=eat_page.css.map */
+
+.contact__details p {
+  color: #003049;
+  font-weight: 500;
+  margin-left: 1%;
+}
+
+.contact__details a {
+  color: #003049;
+  font-weight: 200;
+  margin-left: 1%;
+}
+/*# sourceMappingURL=contact.css.map */

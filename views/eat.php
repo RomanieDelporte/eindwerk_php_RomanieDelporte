@@ -14,7 +14,9 @@
     <p class="page__free"><?= $option['min_price'];?></p> -->
 
 </div>
-<a href="detail_page.php?q_id=<?= $option["eat_id"]; ?>">Lees meer ... </a>
+<div class="page__detailpage">
+<a href="detail_page.php?q_id=<?= $option["eat_id"]; ?>">Lees meer</a>
+</div>
 </div> 
 </div>
 

@@ -7,7 +7,7 @@ class Events extends BaseModel {
         global $db;
             $search_string= $_POST['search_string'] ?? '';
 
-            $sql = 'SELECT * FROM `events` WHERE `title` LIKE :search_string LIMIT 20';
+            $sql = 'SELECT * FROM `events` WHERE `title` LIKE :search_string LIMIT 25';
 
             $sql_statement = $db->prepare($sql);
             $sql_statement->execute(

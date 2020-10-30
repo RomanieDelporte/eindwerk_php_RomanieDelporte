@@ -1,10 +1,9 @@
 <?php 
 
-//   require './libs/db.php'; 
  
 
-  $delivery = $_POST['delivery'] ?? null;
-  $pickup = $_POST['pickup'] ?? null;
+  $delivery = $_GET['delivery'] ?? null;
+  $pickup = $_GET['pickup'] ?? null;
 
   $all_options = EatOptions::getOptions($delivery, $pickup);
 

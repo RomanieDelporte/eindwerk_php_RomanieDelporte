@@ -10824,10 +10824,22 @@ body {
   width: 90%;
   padding: 4px;
   margin-top: 4%;
-  background-color: #003049;
-  color: #FFFF;
+  background-color: #FCBF49;
+  color: #003049;
   font-weight: 100;
   text-align: center;
+  text-decoration: none;
+}
+
+.login__button_login:hover {
+  background-color: #FFFF;
+  border: 2px solid #FFFF;
+}
+
+.login a {
+  color: #003049;
+  text-decoration: none;
+  font-weight: 400;
 }
 
 .login__navigation {
@@ -10853,11 +10865,6 @@ body {
   display: -ms-flexbox;
   display: flex;
   list-style: none;
-}
-
-.login__button_login:hover {
-  background-color: #FCBF49;
-  color: #003049;
 }
 
 .login__create {
@@ -10893,6 +10900,7 @@ body {
   color: #003049;
   border-radius: 10px;
   width: 70%;
+  padding: 1%;
 }
 
 .login__register button button:hover {

@@ -10927,6 +10927,10 @@ a {
   max-width: 100%;
   max-height: 180px;
   border-radius: 10px;
+  border: 6px solid #FCBF49;
+  box-shadow: 8px 10px 12px -7px rgba(0, 0, 0, 0.89);
+  -webkit-box-shadow: 8px 10px 12px -7px rgba(0, 0, 0, 0.89);
+  -moz-box-shadow: 8px 10px 12px -7px rgba(0, 0, 0, 0.89);
 }
 
 .card .card-title {
@@ -10975,14 +10979,36 @@ a {
   padding-bottom: 15%;
 }
 
-.home .card_paint {
-  background-color: #FCBF49;
-  border-radius: 20px;
-  text-align: center;
+.about__page {
+  margin-top: 5%;
+  margin-bottom: 5%;
 }
 
-.home .card_paint h5 {
+.about__page img {
+  width: 100%;
+}
+
+.about__page h1 {
   color: #003049;
+}
+
+.about__page p {
+  line-height: 150%;
+  font-weight: 300;
+}
+
+.about__page a {
+  background-color: #FCBF49;
+  width: 30%;
+  padding: 1.5%;
+  color: #003049;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+.about__page a:hover {
+  background-color: #003049;
+  color: #FFFF;
 }
 
 .home__footer {

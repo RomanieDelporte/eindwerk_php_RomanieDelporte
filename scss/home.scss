@@ -143,12 +143,17 @@ a {
         max-width: 100%;
         max-height: 180px;
         border-radius: 10px;
+        border: 6px solid $color_yellow;
+        box-shadow: 8px 10px 12px -7px rgba(0,0,0,0.89);
+        -webkit-box-shadow: 8px 10px 12px -7px rgba(0,0,0,0.89);
+        -moz-box-shadow: 8px 10px 12px -7px rgba(0,0,0,0.89);
     }
 
     .card-title {
         text-align: center;
         color: $color_darkblue;
     }
+
 
     .card-text {
         text-align: center;
@@ -200,19 +205,62 @@ a {
     }
 
 
-    .card_paint {
-        background-color: $color_yellow;
-        border-radius: 20px;
-        text-align: center;
+    // .card_paint {
+    //     background-color: $color_yellow;
+    //     border-radius: 20px;
+    //     text-align: center;
 
-        h5 {
-            color: $color_darkblue;
-        }
+    //     .card_paint:nth-child(2) {
+    //         background-color: $color_darkblue;
+    //         color: white;
+    //     }
 
-    }
+    //     h5 {
+    //         color: $color_darkblue;
+    //     }
+
+    // }
 
 
 }
+
+
+//first home page zonder login 
+
+
+.about__page {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    img {
+        width: 100%;
+    }
+    h1{
+        color: $color_darkblue;
+    }
+    p {
+        line-height: 150%;
+        font-weight: 300;
+    }
+
+    a { 
+        background-color: $color_yellow;
+        width: 30%;
+        padding: 1.5%;
+        color: $color_darkblue;
+        border-radius: 10px;
+        text-decoration: none;
+       
+    }
+
+
+
+    a:hover {
+        background-color: $color_darkblue;
+        color: $color_white;
+    }
+}
+
+
 
 // footer
 .home__footer {
