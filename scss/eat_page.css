@@ -10918,7 +10918,9 @@ body {
 }
 
 .page__options a.active {
-  background-color: green;
+  background-color: #003049;
+  border: 2px solid #003049;
+  color: #FFFF;
 }
 
 .page__options a:hover {

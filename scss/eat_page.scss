@@ -125,7 +125,9 @@ body {
             color: $color_darkblue;
     
             &.active {
-                background-color: green;
+                background-color: $color_darkblue;
+                border: 2px solid $color_darkblue;
+                color: $color_white;
             }
         }
 
