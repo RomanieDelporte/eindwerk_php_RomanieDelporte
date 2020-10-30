@@ -121,9 +121,12 @@ body {
             width: 25%;
             border: 2px solid $color-yellow;
             background-color: $color-yellow;
-            padding: 1%;
+            padding: 1% 3%;
             color: $color_darkblue;
-
+    
+            &.active {
+                background-color: green;
+            }
         }
 
         a:hover {

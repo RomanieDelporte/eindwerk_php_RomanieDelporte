@@ -41,8 +41,10 @@
             <div class="row">
                 <div class="col-4 page__options">
                     <h3>Selecteer</h3>
-                    <a href="index.php?page_id=3&delivery=1">Delivery</a>
-                    <a href="index.php?page_id=3&pickup=1">Pickup</a>
+                    <a href="index.php?page_id=3" class="<?= ($delivery  === null && $pickup === null) ? 'active' : '' ?>" >All</a>
+                    <a href="index.php?page_id=3&delivery=1" class="<?= ($delivery !== null) ? 'active' : '' ?>" >Delivery</a>
+                    <a href="index.php?page_id=3&pickup=1" class="<?= ($pickup !== null) ? 'active' : '' ?>">Pickup</a>
+
                 </div>
                 <div class="col-8">
                     <div class="page__options">
