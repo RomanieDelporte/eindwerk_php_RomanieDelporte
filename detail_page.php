@@ -41,16 +41,20 @@
         include './views/partials/home/header_home.php';
   ?>
   <div class="detail">
-    <div class="container">
+    <div class="container"> 
+      <div class="detail__back">
+          <a href="index.php?page_id=3"><i class="fas fa-arrow-left"></i>Ga terug</a>
+      </div>  
+
       <div class="detail__content">
-        <div class="col-6">
+      <div class="col-6">
         <img src="/assets/images/<?= $result->photo; ?>">
         </div>
         <div class="col-6">
         <h1><?= $result->title; ?></h1>
         <h2><?= $result->short_description;?></h2>
         <p><?= $result->location;?></p>
-        <a href="<?= $result->takeaway;?>">Bekijk hier</a>
+        <button class="takeout"><a  href="<?= $result->takeaway;?>">Bekijk hier</a></button>
         </div>
       </div>
     </div>
