@@ -13,6 +13,7 @@ require BASE_DIR . '/models/HomeEvents.php';
 require BASE_DIR . '/models/EatOptions.php';
 require BASE_DIR . '/models/events.php';
 require BASE_DIR . '/models/DetailEat.php';
+require BASE_DIR . '/models/MessagePhoto.php';
 // require BASE_DIR . '/models/Article.php';
 
 
