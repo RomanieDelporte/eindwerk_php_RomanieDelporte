@@ -52,7 +52,7 @@ if( isset($_POST['register'] ) ) {
     href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap"
     rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Eindwerk_php</title>
+  <title>FE-PGM</title>
 </head>
 <body>
   <div class="login">

@@ -11034,6 +11034,7 @@ a {
 .home__footer .home__contact p {
   color: #FFFF;
   font-weight: 200;
+  padding-top: 2.7%;
 }
 
 .home__footer .row {
@@ -11055,10 +11056,16 @@ a {
 .home__footer .home__navigation li {
   color: #FFFF;
   font-weight: 200;
+  text-decoration: none;
 }
 
 .home__footer .home__navigation :hover {
   color: #FCBF49;
+  text-decoration: none;
+}
+
+.home__footer .home__navigation a {
+  text-decoration: none;
 }
 
 .home__footer .home__design {

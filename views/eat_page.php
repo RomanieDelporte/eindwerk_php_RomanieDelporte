@@ -17,7 +17,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="scss/eat_page.css?<?= time();?>">
-    <title>Document</title>
+    <title>FE-PGM</title>
 </head>
 
 <body>

@@ -10,7 +10,7 @@ $messages = MessagePhoto::getImages();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PGM Tweets</title>
+    <title>FE-PGM</title>
     <link rel="stylesheet" href="scss/images_page.css?<?= time();?>">
 </head>
 <body>

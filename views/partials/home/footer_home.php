@@ -24,9 +24,10 @@
           <h2>Navigation</h2>
           <ul>
             <a href="#"><li>Home</li></a>
-            <a href="#"><li>Events</li></a>
-            <a href="#"><li>Eat-options</li></a>
-            <a href="#"><li>Contact</li></a>
+            <a href="index.php?page_id=2"><li>Events</li></a>
+            <a href="index.php?page_id=3"><li>Eat-options</li></a>
+            <a href="index.php?page_id=4"><li>Images</li></a>
+            <a href="index.php?page_id=5"><li>Contact</li></a>
           </ul>
         </div>
     </div>
