@@ -35,8 +35,8 @@ $events = Home::getEvents();
           <div class="col-6">
             <h2> Wij zijn FE-PGM.</h2>
             <h3>Wij maken van u online aanwezigheid een succes!</h3>
-            <p><br> Wil je met je medeklasgenoten een activiteit organiseren?<br> dan kan dit hier zeer eenvoudig maakeen evenement aan.<br> 
-            Of eens lekker vettig eten op "vettige vrijdag"? Maak hier je<br>  keuze en alles gaat veel vlotter.</p>
+            <p><br> Wil je met je medeklasgenoten een activiteit organiseren?<br> dan kan dit hier zeer eenvoudig maak een  evenement aan<br>
+            in het tablad events. Of eens lekker vettig eten op "vettige vrijdag"?<br> Maak hier je  keuze en alles gaat veel vlotter.</p>
           </div>
           <div class="col-6">
             <img src="assets/images/home__picture.png">

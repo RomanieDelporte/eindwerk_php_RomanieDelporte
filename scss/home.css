@@ -10899,6 +10899,10 @@ body {
   color: #FCBF49;
 }
 
+.login a {
+  text-decoration: none;
+}
+
 nav {
   display: -webkit-box;
   display: -ms-flexbox;
